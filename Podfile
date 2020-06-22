@@ -9,8 +9,11 @@ target 'PaymentWallTask' do
 
     pod 'RxSwift'
     pod 'RxCocoa'
-    pod 'RealmSwift'
+    pod 'RxRealm'
     pod 'ObjectMapper'
+    pod 'RxKeyboard'
+    pod 'RxGesture'
+
 
   target 'PaymentWallTaskTests' do
     inherit! :search_paths
