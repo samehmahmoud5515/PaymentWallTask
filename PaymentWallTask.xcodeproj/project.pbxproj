@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693424A12FB10010BE4A /* LoginViewModel.swift */; };
+		505A694324A12FB10010BE4A /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693624A12FB10010BE4A /* LoginContract.swift */; };
+		505A694424A12FB10010BE4A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693824A12FB10010BE4A /* LoginPresenter.swift */; };
+		505A694524A12FB10010BE4A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A693A24A12FB10010BE4A /* LoginViewController.xib */; };
+		505A694624A12FB10010BE4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693B24A12FB10010BE4A /* LoginViewController.swift */; };
+		505A694724A12FB10010BE4A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693D24A12FB10010BE4A /* LoginInteractor.swift */; };
+		505A694824A12FB10010BE4A /* LoginLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693F24A12FB10010BE4A /* LoginLocalizatedStrings.swift */; };
+		505A694924A12FB10010BE4A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A694124A12FB10010BE4A /* LoginRouter.swift */; };
+		505A694C24A13BA30010BE4A /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A694B24A13BA30010BE4A /* UIView+IBInspectable.swift */; };
+		505A695024A146190010BE4A /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A694F24A146190010BE4A /* UIViewController+Keyboard.swift */; };
+		505A695424A154110010BE4A /* UserDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A695324A154110010BE4A /* UserDatabaseService.swift */; };
+		505A695724A154830010BE4A /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A695624A154830010BE4A /* Realm+Extensions.swift */; };
+		505A695B24A155410010BE4A /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A695A24A155410010BE4A /* UserEntity.swift */; };
 		5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982279249D15450020A5A5 /* AppDelegate.swift */; };
 		50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */; };
 		5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */; };
@@ -41,6 +54,19 @@
 		023E13161C7E88ED8CE1A264 /* Pods_PaymentWallTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F983F305D95765C14070ABC /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTask_PaymentWallTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		505A693424A12FB10010BE4A /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		505A693624A12FB10010BE4A /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		505A693824A12FB10010BE4A /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		505A693A24A12FB10010BE4A /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		505A693B24A12FB10010BE4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		505A693D24A12FB10010BE4A /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		505A693F24A12FB10010BE4A /* LoginLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLocalizatedStrings.swift; sourceTree = "<group>"; };
+		505A694124A12FB10010BE4A /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		505A694B24A13BA30010BE4A /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
+		505A694F24A146190010BE4A /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		505A695324A154110010BE4A /* UserDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabaseService.swift; sourceTree = "<group>"; };
+		505A695624A154830010BE4A /* Realm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Extensions.swift"; sourceTree = "<group>"; };
+		505A695A24A155410010BE4A /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		50982276249D15450020A5A5 /* PaymentWallTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentWallTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50982279249D15450020A5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50982282249D154F0020A5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +128,143 @@
 				CAFE40AD8C31159141E46881 /* Pods-PaymentWallTaskTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		505A693224A12FB10010BE4A /* Login Module */ = {
+			isa = PBXGroup;
+			children = (
+				505A693324A12FB10010BE4A /* ViewModel */,
+				505A693524A12FB10010BE4A /* Contract */,
+				505A693724A12FB10010BE4A /* Presenter */,
+				505A693924A12FB10010BE4A /* ViewController */,
+				505A693C24A12FB10010BE4A /* Interactor */,
+				505A693E24A12FB10010BE4A /* Localization */,
+				505A694024A12FB10010BE4A /* Router */,
+			);
+			path = "Login Module";
+			sourceTree = "<group>";
+		};
+		505A693324A12FB10010BE4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				505A693424A12FB10010BE4A /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		505A693524A12FB10010BE4A /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				505A693624A12FB10010BE4A /* LoginContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		505A693724A12FB10010BE4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				505A693824A12FB10010BE4A /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		505A693924A12FB10010BE4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				505A693A24A12FB10010BE4A /* LoginViewController.xib */,
+				505A693B24A12FB10010BE4A /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		505A693C24A12FB10010BE4A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				505A693D24A12FB10010BE4A /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		505A693E24A12FB10010BE4A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				505A693F24A12FB10010BE4A /* LoginLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		505A694024A12FB10010BE4A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				505A694124A12FB10010BE4A /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		505A694A24A13B7D0010BE4A /* UIView+IBInspectable */ = {
+			isa = PBXGroup;
+			children = (
+				505A694B24A13BA30010BE4A /* UIView+IBInspectable.swift */,
+			);
+			path = "UIView+IBInspectable";
+			sourceTree = "<group>";
+		};
+		505A694D24A145CB0010BE4A /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				505A694F24A146190010BE4A /* UIViewController+Keyboard.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		505A694E24A145DE0010BE4A /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				505A694A24A13B7D0010BE4A /* UIView+IBInspectable */,
+				509822C2249D22FF0020A5A5 /* UIView+Constraint */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		505A695124A153E90010BE4A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				505A695824A155200010BE4A /* Database */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		505A695224A153F30010BE4A /* UserDatabaseService */ = {
+			isa = PBXGroup;
+			children = (
+				505A695324A154110010BE4A /* UserDatabaseService.swift */,
+			);
+			path = UserDatabaseService;
+			sourceTree = "<group>";
+		};
+		505A695524A1546D0010BE4A /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				505A695624A154830010BE4A /* Realm+Extensions.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		505A695824A155200010BE4A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				505A695924A1552B0010BE4A /* Entities */,
+				505A695224A153F30010BE4A /* UserDatabaseService */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		505A695924A1552B0010BE4A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				505A695A24A155410010BE4A /* UserEntity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		5098226D249D15450020A5A5 = {
@@ -191,6 +354,7 @@
 		509822AD249D17E70020A5A5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				505A693224A12FB10010BE4A /* Login Module */,
 				509822AE249D17F30020A5A5 /* Root Module */,
 			);
 			path = Modules;
@@ -233,6 +397,7 @@
 		509822C0249D22EC0020A5A5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				505A695124A153E90010BE4A /* Services */,
 				509822C1249D22F60020A5A5 /* Extensions */,
 			);
 			path = Core;
@@ -241,7 +406,9 @@
 		509822C1249D22F60020A5A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				509822C2249D22FF0020A5A5 /* UIView+Constraint */,
+				505A695524A1546D0010BE4A /* Realm */,
+				505A694D24A145CB0010BE4A /* UIViewController */,
+				505A694E24A145DE0010BE4A /* UIView */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -375,6 +542,7 @@
 			files = (
 				509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */,
 				509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */,
+				505A694524A12FB10010BE4A /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,9 +671,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				509822B2249D182C0020A5A5 /* RootRouter.swift in Sources */,
+				505A695024A146190010BE4A /* UIViewController+Keyboard.swift in Sources */,
+				505A694324A12FB10010BE4A /* LoginContract.swift in Sources */,
+				505A694424A12FB10010BE4A /* LoginPresenter.swift in Sources */,
+				505A695724A154830010BE4A /* Realm+Extensions.swift in Sources */,
 				509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */,
+				505A694624A12FB10010BE4A /* LoginViewController.swift in Sources */,
+				505A695B24A155410010BE4A /* UserEntity.swift in Sources */,
 				5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */,
+				505A694C24A13BA30010BE4A /* UIView+IBInspectable.swift in Sources */,
+				505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */,
+				505A695424A154110010BE4A /* UserDatabaseService.swift in Sources */,
+				505A694824A12FB10010BE4A /* LoginLocalizatedStrings.swift in Sources */,
+				505A694924A12FB10010BE4A /* LoginRouter.swift in Sources */,
 				509822B5249D18830020A5A5 /* RootContract.swift in Sources */,
+				505A694724A12FB10010BE4A /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
