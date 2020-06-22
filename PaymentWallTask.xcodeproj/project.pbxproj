@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982279249D15450020A5A5 /* AppDelegate.swift */; };
+		50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */; };
+		5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */; };
+		509822B2249D182C0020A5A5 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822B1249D182C0020A5A5 /* RootRouter.swift */; };
+		509822B5249D18830020A5A5 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822B4249D18830020A5A5 /* RootContract.swift */; };
+		509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50982282249D154F0020A5A5 /* Assets.xcassets */; };
+		509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822C3249D23130020A5A5 /* UIView+Constraints.swift */; };
+		509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509822C5249D25500020A5A5 /* LaunchScreen.storyboard */; };
+		9C7ED93E2A3A7FBACEE7BF71 /* Pods_PaymentWallTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */; };
+		A0E03D4F941BD4364038E8C9 /* Pods_PaymentWallTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023E13161C7E88ED8CE1A264 /* Pods_PaymentWallTask.framework */; };
+		FD785D7F59AC7A9883DF0926 /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F983F305D95765C14070ABC /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5098228D249D154F0020A5A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5098226E249D15450020A5A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50982275249D15450020A5A5;
+			remoteInfo = PaymentWallTask;
+		};
+		50982298249D154F0020A5A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5098226E249D15450020A5A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50982275249D15450020A5A5;
+			remoteInfo = PaymentWallTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023E13161C7E88ED8CE1A264 /* Pods_PaymentWallTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F983F305D95765C14070ABC /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTask_PaymentWallTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50982276249D15450020A5A5 /* PaymentWallTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentWallTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50982279249D15450020A5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50982282249D154F0020A5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50982287249D154F0020A5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5098228C249D154F0020A5A5 /* PaymentWallTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentWallTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentWallTaskTests.swift; sourceTree = "<group>"; };
+		50982292249D154F0020A5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50982297249D154F0020A5A5 /* PaymentWallTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentWallTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentWallTaskUITests.swift; sourceTree = "<group>"; };
+		5098229D249D154F0020A5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509822B1249D182C0020A5A5 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		509822B4249D18830020A5A5 /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		509822C3249D23130020A5A5 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		509822C6249D25500020A5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		662B058A596B1AE5CD825D61 /* Pods-PaymentWallTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTask.debug.xcconfig"; path = "Target Support Files/Pods-PaymentWallTask/Pods-PaymentWallTask.debug.xcconfig"; sourceTree = "<group>"; };
+		B90A29F7E76E1813E0F3CF53 /* Pods-PaymentWallTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTask.release.xcconfig"; path = "Target Support Files/Pods-PaymentWallTask/Pods-PaymentWallTask.release.xcconfig"; sourceTree = "<group>"; };
+		C817DF64767C859A823617DD /* Pods-PaymentWallTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAFE40AD8C31159141E46881 /* Pods-PaymentWallTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTaskTests.release.xcconfig"; path = "Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3EC83E5387936E8CBC83EE3 /* Pods-PaymentWallTask-PaymentWallTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTask-PaymentWallTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-PaymentWallTask-PaymentWallTaskUITests/Pods-PaymentWallTask-PaymentWallTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E56040F6FA1480D630A81014 /* Pods-PaymentWallTask-PaymentWallTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTask-PaymentWallTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-PaymentWallTask-PaymentWallTaskUITests/Pods-PaymentWallTask-PaymentWallTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50982273249D15450020A5A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E03D4F941BD4364038E8C9 /* Pods_PaymentWallTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50982289249D154F0020A5A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7ED93E2A3A7FBACEE7BF71 /* Pods_PaymentWallTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50982294249D154F0020A5A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD785D7F59AC7A9883DF0926 /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E490F20B1A655324D3753C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				662B058A596B1AE5CD825D61 /* Pods-PaymentWallTask.debug.xcconfig */,
+				B90A29F7E76E1813E0F3CF53 /* Pods-PaymentWallTask.release.xcconfig */,
+				E56040F6FA1480D630A81014 /* Pods-PaymentWallTask-PaymentWallTaskUITests.debug.xcconfig */,
+				D3EC83E5387936E8CBC83EE3 /* Pods-PaymentWallTask-PaymentWallTaskUITests.release.xcconfig */,
+				C817DF64767C859A823617DD /* Pods-PaymentWallTaskTests.debug.xcconfig */,
+				CAFE40AD8C31159141E46881 /* Pods-PaymentWallTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5098226D249D15450020A5A5 = {
+			isa = PBXGroup;
+			children = (
+				50982278249D15450020A5A5 /* PaymentWallTask */,
+				5098228F249D154F0020A5A5 /* PaymentWallTaskTests */,
+				5098229A249D154F0020A5A5 /* PaymentWallTaskUITests */,
+				50982277249D15450020A5A5 /* Products */,
+				27E490F20B1A655324D3753C /* Pods */,
+				F46AC0965E4D4814A385E68E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50982277249D15450020A5A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50982276249D15450020A5A5 /* PaymentWallTask.app */,
+				5098228C249D154F0020A5A5 /* PaymentWallTaskTests.xctest */,
+				50982297249D154F0020A5A5 /* PaymentWallTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50982278249D15450020A5A5 /* PaymentWallTask */ = {
+			isa = PBXGroup;
+			children = (
+				509822C0249D22EC0020A5A5 /* Core */,
+				509822A9249D16E60020A5A5 /* Resources */,
+				509822AD249D17E70020A5A5 /* Modules */,
+			);
+			path = PaymentWallTask;
+			sourceTree = "<group>";
+		};
+		5098228F249D154F0020A5A5 /* PaymentWallTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */,
+				50982292249D154F0020A5A5 /* Info.plist */,
+			);
+			path = PaymentWallTaskTests;
+			sourceTree = "<group>";
+		};
+		5098229A249D154F0020A5A5 /* PaymentWallTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */,
+				5098229D249D154F0020A5A5 /* Info.plist */,
+			);
+			path = PaymentWallTaskUITests;
+			sourceTree = "<group>";
+		};
+		509822A9249D16E60020A5A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				509822AC249D17C30020A5A5 /* StoryBoard */,
+				509822AB249D170B0020A5A5 /* Images */,
+				509822AA249D16F00020A5A5 /* Plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		509822AA249D16F00020A5A5 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				50982287249D154F0020A5A5 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		509822AB249D170B0020A5A5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				50982282249D154F0020A5A5 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		509822AC249D17C30020A5A5 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				509822C5249D25500020A5A5 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		509822AD249D17E70020A5A5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				509822AE249D17F30020A5A5 /* Root Module */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		509822AE249D17F30020A5A5 /* Root Module */ = {
+			isa = PBXGroup;
+			children = (
+				509822B3249D18730020A5A5 /* Contract */,
+				509822B0249D18150020A5A5 /* Router */,
+				509822AF249D18090020A5A5 /* AppDelegate */,
+			);
+			path = "Root Module";
+			sourceTree = "<group>";
+		};
+		509822AF249D18090020A5A5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				50982279249D15450020A5A5 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		509822B0249D18150020A5A5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				509822B1249D182C0020A5A5 /* RootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		509822B3249D18730020A5A5 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				509822B4249D18830020A5A5 /* RootContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		509822C0249D22EC0020A5A5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				509822C1249D22F60020A5A5 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		509822C1249D22F60020A5A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				509822C2249D22FF0020A5A5 /* UIView+Constraint */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		509822C2249D22FF0020A5A5 /* UIView+Constraint */ = {
+			isa = PBXGroup;
+			children = (
+				509822C3249D23130020A5A5 /* UIView+Constraints.swift */,
+			);
+			path = "UIView+Constraint";
+			sourceTree = "<group>";
+		};
+		F46AC0965E4D4814A385E68E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				023E13161C7E88ED8CE1A264 /* Pods_PaymentWallTask.framework */,
+				1F983F305D95765C14070ABC /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework */,
+				4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50982275249D15450020A5A5 /* PaymentWallTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509822A0249D154F0020A5A5 /* Build configuration list for PBXNativeTarget "PaymentWallTask" */;
+			buildPhases = (
+				949D211A22A816A7939396E3 /* [CP] Check Pods Manifest.lock */,
+				50982272249D15450020A5A5 /* Sources */,
+				50982273249D15450020A5A5 /* Frameworks */,
+				50982274249D15450020A5A5 /* Resources */,
+				7D1802E585A3B47ED1A6C7BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentWallTask;
+			productName = PaymentWallTask;
+			productReference = 50982276249D15450020A5A5 /* PaymentWallTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5098228B249D154F0020A5A5 /* PaymentWallTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509822A3249D154F0020A5A5 /* Build configuration list for PBXNativeTarget "PaymentWallTaskTests" */;
+			buildPhases = (
+				516AE495526A7F69965FAEE2 /* [CP] Check Pods Manifest.lock */,
+				50982288249D154F0020A5A5 /* Sources */,
+				50982289249D154F0020A5A5 /* Frameworks */,
+				5098228A249D154F0020A5A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5098228E249D154F0020A5A5 /* PBXTargetDependency */,
+			);
+			name = PaymentWallTaskTests;
+			productName = PaymentWallTaskTests;
+			productReference = 5098228C249D154F0020A5A5 /* PaymentWallTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50982296249D154F0020A5A5 /* PaymentWallTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509822A6249D154F0020A5A5 /* Build configuration list for PBXNativeTarget "PaymentWallTaskUITests" */;
+			buildPhases = (
+				C056D46E41ABDA972FA263FF /* [CP] Check Pods Manifest.lock */,
+				50982293249D154F0020A5A5 /* Sources */,
+				50982294249D154F0020A5A5 /* Frameworks */,
+				50982295249D154F0020A5A5 /* Resources */,
+				5F60327FB73267B7A6CAF97C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50982299249D154F0020A5A5 /* PBXTargetDependency */,
+			);
+			name = PaymentWallTaskUITests;
+			productName = PaymentWallTaskUITests;
+			productReference = 50982297249D154F0020A5A5 /* PaymentWallTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5098226E249D15450020A5A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = sameh;
+				TargetAttributes = {
+					50982275249D15450020A5A5 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					5098228B249D154F0020A5A5 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 50982275249D15450020A5A5;
+					};
+					50982296249D154F0020A5A5 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 50982275249D15450020A5A5;
+					};
+				};
+			};
+			buildConfigurationList = 50982271249D15450020A5A5 /* Build configuration list for PBXProject "PaymentWallTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5098226D249D15450020A5A5;
+			productRefGroup = 50982277249D15450020A5A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50982275249D15450020A5A5 /* PaymentWallTask */,
+				5098228B249D154F0020A5A5 /* PaymentWallTaskTests */,
+				50982296249D154F0020A5A5 /* PaymentWallTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50982274249D15450020A5A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */,
+				509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5098228A249D154F0020A5A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50982295249D154F0020A5A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		516AE495526A7F69965FAEE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentWallTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F60327FB73267B7A6CAF97C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTask-PaymentWallTaskUITests/Pods-PaymentWallTask-PaymentWallTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTask-PaymentWallTaskUITests/Pods-PaymentWallTask-PaymentWallTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTask-PaymentWallTaskUITests/Pods-PaymentWallTask-PaymentWallTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D1802E585A3B47ED1A6C7BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTask/Pods-PaymentWallTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTask/Pods-PaymentWallTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTask/Pods-PaymentWallTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		949D211A22A816A7939396E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentWallTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C056D46E41ABDA972FA263FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentWallTask-PaymentWallTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50982272249D15450020A5A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509822B2249D182C0020A5A5 /* RootRouter.swift in Sources */,
+				509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */,
+				5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */,
+				509822B5249D18830020A5A5 /* RootContract.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50982288249D154F0020A5A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50982293249D154F0020A5A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5098228E249D154F0020A5A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50982275249D15450020A5A5 /* PaymentWallTask */;
+			targetProxy = 5098228D249D154F0020A5A5 /* PBXContainerItemProxy */;
+		};
+		50982299249D154F0020A5A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50982275249D15450020A5A5 /* PaymentWallTask */;
+			targetProxy = 50982298249D154F0020A5A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		509822C5249D25500020A5A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				509822C6249D25500020A5A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5098229E249D154F0020A5A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5098229F249D154F0020A5A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		509822A1249D154F0020A5A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662B058A596B1AE5CD825D61 /* Pods-PaymentWallTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DTZF3K2TF;
+				INFOPLIST_FILE = PaymentWallTask/Resources/Plist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sameh.PaymentWallTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		509822A2249D154F0020A5A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90A29F7E76E1813E0F3CF53 /* Pods-PaymentWallTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DTZF3K2TF;
+				INFOPLIST_FILE = PaymentWallTask/Resources/Plist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sameh.PaymentWallTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		509822A4249D154F0020A5A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C817DF64767C859A823617DD /* Pods-PaymentWallTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DTZF3K2TF;
+				INFOPLIST_FILE = PaymentWallTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sameh.PaymentWallTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentWallTask.app/PaymentWallTask";
+			};
+			name = Debug;
+		};
+		509822A5249D154F0020A5A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAFE40AD8C31159141E46881 /* Pods-PaymentWallTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DTZF3K2TF;
+				INFOPLIST_FILE = PaymentWallTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sameh.PaymentWallTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentWallTask.app/PaymentWallTask";
+			};
+			name = Release;
+		};
+		509822A7249D154F0020A5A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56040F6FA1480D630A81014 /* Pods-PaymentWallTask-PaymentWallTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DTZF3K2TF;
+				INFOPLIST_FILE = PaymentWallTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sameh.PaymentWallTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentWallTask;
+			};
+			name = Debug;
+		};
+		509822A8249D154F0020A5A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EC83E5387936E8CBC83EE3 /* Pods-PaymentWallTask-PaymentWallTaskUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DTZF3K2TF;
+				INFOPLIST_FILE = PaymentWallTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sameh.PaymentWallTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentWallTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50982271249D15450020A5A5 /* Build configuration list for PBXProject "PaymentWallTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5098229E249D154F0020A5A5 /* Debug */,
+				5098229F249D154F0020A5A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509822A0249D154F0020A5A5 /* Build configuration list for PBXNativeTarget "PaymentWallTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509822A1249D154F0020A5A5 /* Debug */,
+				509822A2249D154F0020A5A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509822A3249D154F0020A5A5 /* Build configuration list for PBXNativeTarget "PaymentWallTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509822A4249D154F0020A5A5 /* Debug */,
+				509822A5249D154F0020A5A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509822A6249D154F0020A5A5 /* Build configuration list for PBXNativeTarget "PaymentWallTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509822A7249D154F0020A5A5 /* Debug */,
+				509822A8249D154F0020A5A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5098226E249D15450020A5A5 /* Project object */;
+}

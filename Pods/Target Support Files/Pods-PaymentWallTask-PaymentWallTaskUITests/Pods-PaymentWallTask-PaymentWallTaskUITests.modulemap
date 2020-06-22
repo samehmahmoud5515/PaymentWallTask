@@ -1,0 +1,6 @@
+framework module Pods_PaymentWallTask_PaymentWallTaskUITests {
+  umbrella header "Pods-PaymentWallTask-PaymentWallTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
