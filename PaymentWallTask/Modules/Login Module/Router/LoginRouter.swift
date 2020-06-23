@@ -33,9 +33,7 @@ class LoginRouter: LoginRouterProtocol {
     
     //MARK: - Routing
     func go(to route:LoginRoute) {
-        switch route {
-        default: break
-        }
+        
     }
 
 }

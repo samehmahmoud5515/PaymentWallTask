@@ -6,7 +6,6 @@
 //
 //
 
-import UIKit
 import RxSwift
 
 class QRCodeScannerPresenter: QRCodeScannerPresenterProtocol {
@@ -32,9 +31,32 @@ class QRCodeScannerPresenter: QRCodeScannerPresenterProtocol {
     
     //MARK:- Functions
     func attach() {
-        
+        bindTransactionRelayWithDidCaptureString()
+        handleTransactionDidCaptured()
     }
     
-    //MARK:- Private functions
+    private func bindTransactionRelayWithDidCaptureString() {
+        // map capture string form camera to Transaction Object
+        viewModel.didCaptureString
+            .map { [weak self] in return self?.interactor?.parseTransaction(from: $0)}
+            .compactMap { $0 }
+            .bind(to: viewModel.transaction)
+            .disposed(by: disposeBag)
+    }
+    
+    private func handleTransactionDidCaptured() {
+        viewModel.transaction.subscribe(onNext: { [weak self] transaction in
+            self?.navigateToPayment(with: transaction)
+        }).disposed(by: disposeBag)
+    }
+    
 
+}
+
+//MARK: - Navigation
+extension QRCodeScannerPresenter {
+    
+    private func navigateToPayment(with transcation: Transaction) {
+        router.go(to: .payment(transcation))
+    }
 }

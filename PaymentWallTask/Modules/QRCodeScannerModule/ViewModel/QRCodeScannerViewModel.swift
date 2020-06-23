@@ -6,9 +6,14 @@
 //
 //
 
-import Foundation
+import RxSwift
+import RxCocoa
 
 struct QRCodeScannerViewModel {
+    
+    let didCaptureString = PublishSubject<String>()
+    let transaction = PublishRelay<Transaction>()
+    let paymentConfirmed = PublishSubject<Bool>()
     
     let localization =  QRCodeScannerLocalization()
 }

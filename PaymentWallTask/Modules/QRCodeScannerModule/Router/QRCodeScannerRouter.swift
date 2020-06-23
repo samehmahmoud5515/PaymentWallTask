@@ -18,7 +18,7 @@ class QRCodeScannerRouter: QRCodeScannerRouterProtocol {
     
     //MARK:- Assemple
     static func assembleModule() -> UIViewController {
-        // Change to get view from storyboard if not using progammatic UI
+
         let view = QRCodeScannerViewController()
         let interactor = QRCodeScannerInteractor()
         let router = QRCodeScannerRouter()
@@ -34,7 +34,9 @@ class QRCodeScannerRouter: QRCodeScannerRouterProtocol {
     //MARK: - Routing
     func go(to route:QRCodeScannerRoute) {
         switch route {
-        default: break
+        case .payment(let transaction):
+            let paymentVc = PaymentRouter.assembleModule(transaction: transaction)
+            viewController?.navigationController?.pushViewController(paymentVc, animated: true)
         }
     }
 

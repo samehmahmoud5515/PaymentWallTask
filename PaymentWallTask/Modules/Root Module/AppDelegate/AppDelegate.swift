@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow!
+    var window: UIWindow?
     var rootRouter: RootRouter?
 
 
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     private func configureRootController() {
         window = UIWindow()
-        rootRouter = RootRouter(window: window)
+        rootRouter = RootRouter(window: window!)
         rootRouter?.go(to: .splash)
     }
 }
