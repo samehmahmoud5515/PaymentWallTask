@@ -33,9 +33,7 @@ class WalletTransactionsRouter: WalletTransactionsRouterProtocol {
     
     //MARK: - Routing
     func go(to route:WalletTransactionsRoute) {
-        switch route {
-        default: break
-        }
+       
     }
 
 }

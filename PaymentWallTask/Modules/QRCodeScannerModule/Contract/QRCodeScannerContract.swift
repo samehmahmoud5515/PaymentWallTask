@@ -12,6 +12,7 @@ import RxSwift
 
 //MARK: - Router
 enum QRCodeScannerRoute {
+    case payment(Transaction)
 }
 
 protocol QRCodeScannerRouterProtocol: class {
@@ -31,8 +32,8 @@ protocol QRCodeScannerPresenterProtocol: class {
 
 //MARK: - Interactor
 protocol QRCodeScannerInteractorProtocol: class {
-
-    
+    func parseTransaction(from json: String) -> Transaction?
+    func buildDescripitonMessageFrom(transaction: Transaction) -> String
 }
 
 

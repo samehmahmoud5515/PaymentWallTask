@@ -59,6 +59,7 @@ class HomeRouter: HomeRouterProtocol {
         let images = HomeImages()
         let scannerController = QRCodeScannerRouter.assembleModule()
         let scannerNavigation = UINavigationController(rootViewController: scannerController)
+        scannerNavigation.navigationBar.tintColor = .white
         scannerNavigation.setNavigationBarHidden(true, animated: false)
         scannerController.tabBarItem = UITabBarItem(title: "Scanner",
                                                     image: UIImage(named: images.scannerUnselectedImg),
@@ -80,9 +81,7 @@ class HomeRouter: HomeRouterProtocol {
     
     //MARK: - Routing
     func go(to route:HomeRoute) {
-        switch route {
-        default: break
-        }
+        
     }
 
 }

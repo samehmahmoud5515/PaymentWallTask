@@ -33,9 +33,7 @@ class ProfileRouter: ProfileRouterProtocol {
     
     //MARK: - Routing
     func go(to route:ProfileRoute) {
-        switch route {
-        default: break
-        }
+        
     }
 
 }
