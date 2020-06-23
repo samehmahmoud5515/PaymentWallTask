@@ -13,6 +13,7 @@ target 'PaymentWallTask' do
     pod 'ObjectMapper'
     pod 'RxKeyboard'
     pod 'RxGesture'
+    pod 'RxDataSources'
 
 
   target 'PaymentWallTaskTests' do

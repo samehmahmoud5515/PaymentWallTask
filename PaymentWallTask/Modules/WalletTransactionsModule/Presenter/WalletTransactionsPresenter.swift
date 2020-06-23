@@ -31,7 +31,10 @@ class WalletTransactionsPresenter: WalletTransactionsPresenterProtocol {
     
     //MARK:- Functions
     func attach() {
-
+        viewModel.transactionsDatasource.onNext([
+            CategorizedTransaction(header: "adas", items: [TransactionEntity()]),
+            CategorizedTransaction(header: "123", items: [TransactionEntity(), TransactionEntity()])
+        ])
        
     }
     
