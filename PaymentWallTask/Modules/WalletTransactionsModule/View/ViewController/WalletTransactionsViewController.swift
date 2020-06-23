@@ -30,7 +30,6 @@ class WalletTransactionsViewController: UIViewController, WalletTransactionsView
         configuireUIBinding()
         presenter?.attach()
     }
-    
 }
 
 //MARK: - UI Setup
