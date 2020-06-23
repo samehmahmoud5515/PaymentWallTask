@@ -20,6 +20,40 @@
 		505A695424A154110010BE4A /* UserDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A695324A154110010BE4A /* UserDatabaseService.swift */; };
 		505A695724A154830010BE4A /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A695624A154830010BE4A /* Realm+Extensions.swift */; };
 		505A695B24A155410010BE4A /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A695A24A155410010BE4A /* UserEntity.swift */; };
+		505A696E24A164930010BE4A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A696024A164930010BE4A /* HomeViewModel.swift */; };
+		505A696F24A164930010BE4A /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A696224A164930010BE4A /* HomeContract.swift */; };
+		505A697024A164930010BE4A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A696424A164930010BE4A /* HomePresenter.swift */; };
+		505A697124A164930010BE4A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A696624A164930010BE4A /* HomeViewController.xib */; };
+		505A697224A164930010BE4A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A696724A164930010BE4A /* HomeViewController.swift */; };
+		505A697324A164930010BE4A /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A696924A164930010BE4A /* HomeInteractor.swift */; };
+		505A697424A164930010BE4A /* HomeLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A696B24A164930010BE4A /* HomeLocalizatedStrings.swift */; };
+		505A697524A164930010BE4A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A696D24A164930010BE4A /* HomeRouter.swift */; };
+		505A698824A167D20010BE4A /* WalletTransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A697A24A167D20010BE4A /* WalletTransactionsViewModel.swift */; };
+		505A698924A167D20010BE4A /* WalletTransactionsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A697C24A167D20010BE4A /* WalletTransactionsContract.swift */; };
+		505A698A24A167D20010BE4A /* WalletTransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A697E24A167D20010BE4A /* WalletTransactionsPresenter.swift */; };
+		505A698B24A167D20010BE4A /* WalletTransactionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A698024A167D20010BE4A /* WalletTransactionsViewController.xib */; };
+		505A698C24A167D20010BE4A /* WalletTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A698124A167D20010BE4A /* WalletTransactionsViewController.swift */; };
+		505A698D24A167D20010BE4A /* WalletTransactionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A698324A167D20010BE4A /* WalletTransactionsInteractor.swift */; };
+		505A698E24A167D20010BE4A /* WalletTransactionsLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A698524A167D20010BE4A /* WalletTransactionsLocalizatedStrings.swift */; };
+		505A698F24A167D20010BE4A /* WalletTransactionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A698724A167D20010BE4A /* WalletTransactionsRouter.swift */; };
+		505A69A224A169170010BE4A /* QRCodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A699424A169170010BE4A /* QRCodeScannerViewModel.swift */; };
+		505A69A324A169170010BE4A /* QRCodeScannerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A699624A169170010BE4A /* QRCodeScannerContract.swift */; };
+		505A69A424A169170010BE4A /* QRCodeScannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A699824A169170010BE4A /* QRCodeScannerPresenter.swift */; };
+		505A69A524A169170010BE4A /* QRCodeScannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A699A24A169170010BE4A /* QRCodeScannerViewController.xib */; };
+		505A69A624A169170010BE4A /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A699B24A169170010BE4A /* QRCodeScannerViewController.swift */; };
+		505A69A724A169170010BE4A /* QRCodeScannerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A699D24A169170010BE4A /* QRCodeScannerInteractor.swift */; };
+		505A69A824A169170010BE4A /* QRCodeScannerLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A699F24A169170010BE4A /* QRCodeScannerLocalizatedStrings.swift */; };
+		505A69A924A169170010BE4A /* QRCodeScannerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69A124A169170010BE4A /* QRCodeScannerRouter.swift */; };
+		505A69BC24A169A50010BE4A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69AE24A169A50010BE4A /* ProfileViewModel.swift */; };
+		505A69BD24A169A50010BE4A /* ProfileContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69B024A169A50010BE4A /* ProfileContract.swift */; };
+		505A69BE24A169A50010BE4A /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69B224A169A50010BE4A /* ProfilePresenter.swift */; };
+		505A69BF24A169A50010BE4A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A69B424A169A50010BE4A /* ProfileViewController.xib */; };
+		505A69C024A169A50010BE4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69B524A169A50010BE4A /* ProfileViewController.swift */; };
+		505A69C124A169A50010BE4A /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69B724A169A50010BE4A /* ProfileInteractor.swift */; };
+		505A69C224A169A50010BE4A /* ProfileLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69B924A169A50010BE4A /* ProfileLocalizatedStrings.swift */; };
+		505A69C324A169A50010BE4A /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69BB24A169A50010BE4A /* ProfileRouter.swift */; };
+		505A69C524A17DD80010BE4A /* HomeImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69C424A17DD80010BE4A /* HomeImages.swift */; };
+		505A69CA24A182EA0010BE4A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A69C924A182EA0010BE4A /* UIColor+Extension.swift */; };
 		5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982279249D15450020A5A5 /* AppDelegate.swift */; };
 		50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */; };
 		5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */; };
@@ -67,6 +101,40 @@
 		505A695324A154110010BE4A /* UserDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabaseService.swift; sourceTree = "<group>"; };
 		505A695624A154830010BE4A /* Realm+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Extensions.swift"; sourceTree = "<group>"; };
 		505A695A24A155410010BE4A /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		505A696024A164930010BE4A /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		505A696224A164930010BE4A /* HomeContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		505A696424A164930010BE4A /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		505A696624A164930010BE4A /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		505A696724A164930010BE4A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		505A696924A164930010BE4A /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		505A696B24A164930010BE4A /* HomeLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLocalizatedStrings.swift; sourceTree = "<group>"; };
+		505A696D24A164930010BE4A /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		505A697A24A167D20010BE4A /* WalletTransactionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionsViewModel.swift; sourceTree = "<group>"; };
+		505A697C24A167D20010BE4A /* WalletTransactionsContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionsContract.swift; sourceTree = "<group>"; };
+		505A697E24A167D20010BE4A /* WalletTransactionsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionsPresenter.swift; sourceTree = "<group>"; };
+		505A698024A167D20010BE4A /* WalletTransactionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletTransactionsViewController.xib; sourceTree = "<group>"; };
+		505A698124A167D20010BE4A /* WalletTransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionsViewController.swift; sourceTree = "<group>"; };
+		505A698324A167D20010BE4A /* WalletTransactionsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionsInteractor.swift; sourceTree = "<group>"; };
+		505A698524A167D20010BE4A /* WalletTransactionsLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionsLocalizatedStrings.swift; sourceTree = "<group>"; };
+		505A698724A167D20010BE4A /* WalletTransactionsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTransactionsRouter.swift; sourceTree = "<group>"; };
+		505A699424A169170010BE4A /* QRCodeScannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewModel.swift; sourceTree = "<group>"; };
+		505A699624A169170010BE4A /* QRCodeScannerContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerContract.swift; sourceTree = "<group>"; };
+		505A699824A169170010BE4A /* QRCodeScannerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerPresenter.swift; sourceTree = "<group>"; };
+		505A699A24A169170010BE4A /* QRCodeScannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeScannerViewController.xib; sourceTree = "<group>"; };
+		505A699B24A169170010BE4A /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		505A699D24A169170010BE4A /* QRCodeScannerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerInteractor.swift; sourceTree = "<group>"; };
+		505A699F24A169170010BE4A /* QRCodeScannerLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerLocalizatedStrings.swift; sourceTree = "<group>"; };
+		505A69A124A169170010BE4A /* QRCodeScannerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScannerRouter.swift; sourceTree = "<group>"; };
+		505A69AE24A169A50010BE4A /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		505A69B024A169A50010BE4A /* ProfileContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContract.swift; sourceTree = "<group>"; };
+		505A69B224A169A50010BE4A /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		505A69B424A169A50010BE4A /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		505A69B524A169A50010BE4A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		505A69B724A169A50010BE4A /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		505A69B924A169A50010BE4A /* ProfileLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLocalizatedStrings.swift; sourceTree = "<group>"; };
+		505A69BB24A169A50010BE4A /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		505A69C424A17DD80010BE4A /* HomeImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImages.swift; sourceTree = "<group>"; };
+		505A69C924A182EA0010BE4A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		50982276249D15450020A5A5 /* PaymentWallTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentWallTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50982279249D15450020A5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50982282249D154F0020A5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -267,6 +335,299 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		505A695E24A164930010BE4A /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				505A695F24A164930010BE4A /* ViewModel */,
+				505A696124A164930010BE4A /* Contract */,
+				505A696324A164930010BE4A /* Presenter */,
+				505A696524A164930010BE4A /* ViewController */,
+				505A696824A164930010BE4A /* Interactor */,
+				505A696A24A164930010BE4A /* Localization */,
+				505A696C24A164930010BE4A /* Router */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		505A695F24A164930010BE4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				505A696024A164930010BE4A /* HomeViewModel.swift */,
+				505A69C424A17DD80010BE4A /* HomeImages.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		505A696124A164930010BE4A /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				505A696224A164930010BE4A /* HomeContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		505A696324A164930010BE4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				505A696424A164930010BE4A /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		505A696524A164930010BE4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				505A696624A164930010BE4A /* HomeViewController.xib */,
+				505A696724A164930010BE4A /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		505A696824A164930010BE4A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				505A696924A164930010BE4A /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		505A696A24A164930010BE4A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				505A696B24A164930010BE4A /* HomeLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		505A696C24A164930010BE4A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				505A696D24A164930010BE4A /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		505A697824A167D20010BE4A /* WalletTransactionsModule */ = {
+			isa = PBXGroup;
+			children = (
+				505A697924A167D20010BE4A /* ViewModel */,
+				505A697B24A167D20010BE4A /* Contract */,
+				505A697D24A167D20010BE4A /* Presenter */,
+				505A697F24A167D20010BE4A /* ViewController */,
+				505A698224A167D20010BE4A /* Interactor */,
+				505A698424A167D20010BE4A /* Localization */,
+				505A698624A167D20010BE4A /* Router */,
+			);
+			path = WalletTransactionsModule;
+			sourceTree = "<group>";
+		};
+		505A697924A167D20010BE4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				505A697A24A167D20010BE4A /* WalletTransactionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		505A697B24A167D20010BE4A /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				505A697C24A167D20010BE4A /* WalletTransactionsContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		505A697D24A167D20010BE4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				505A697E24A167D20010BE4A /* WalletTransactionsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		505A697F24A167D20010BE4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				505A698024A167D20010BE4A /* WalletTransactionsViewController.xib */,
+				505A698124A167D20010BE4A /* WalletTransactionsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		505A698224A167D20010BE4A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				505A698324A167D20010BE4A /* WalletTransactionsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		505A698424A167D20010BE4A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				505A698524A167D20010BE4A /* WalletTransactionsLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		505A698624A167D20010BE4A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				505A698724A167D20010BE4A /* WalletTransactionsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		505A699224A169170010BE4A /* QRCodeScannerModule */ = {
+			isa = PBXGroup;
+			children = (
+				505A699324A169170010BE4A /* ViewModel */,
+				505A699524A169170010BE4A /* Contract */,
+				505A699724A169170010BE4A /* Presenter */,
+				505A699924A169170010BE4A /* ViewController */,
+				505A699C24A169170010BE4A /* Interactor */,
+				505A699E24A169170010BE4A /* Localization */,
+				505A69A024A169170010BE4A /* Router */,
+			);
+			path = QRCodeScannerModule;
+			sourceTree = "<group>";
+		};
+		505A699324A169170010BE4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				505A699424A169170010BE4A /* QRCodeScannerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		505A699524A169170010BE4A /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				505A699624A169170010BE4A /* QRCodeScannerContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		505A699724A169170010BE4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				505A699824A169170010BE4A /* QRCodeScannerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		505A699924A169170010BE4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				505A699A24A169170010BE4A /* QRCodeScannerViewController.xib */,
+				505A699B24A169170010BE4A /* QRCodeScannerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		505A699C24A169170010BE4A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				505A699D24A169170010BE4A /* QRCodeScannerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		505A699E24A169170010BE4A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				505A699F24A169170010BE4A /* QRCodeScannerLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		505A69A024A169170010BE4A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				505A69A124A169170010BE4A /* QRCodeScannerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		505A69AC24A169A50010BE4A /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				505A69AD24A169A50010BE4A /* ViewModel */,
+				505A69AF24A169A50010BE4A /* Contract */,
+				505A69B124A169A50010BE4A /* Presenter */,
+				505A69B324A169A50010BE4A /* ViewController */,
+				505A69B624A169A50010BE4A /* Interactor */,
+				505A69B824A169A50010BE4A /* Localization */,
+				505A69BA24A169A50010BE4A /* Router */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		505A69AD24A169A50010BE4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				505A69AE24A169A50010BE4A /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		505A69AF24A169A50010BE4A /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				505A69B024A169A50010BE4A /* ProfileContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		505A69B124A169A50010BE4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				505A69B224A169A50010BE4A /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		505A69B324A169A50010BE4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				505A69B424A169A50010BE4A /* ProfileViewController.xib */,
+				505A69B524A169A50010BE4A /* ProfileViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		505A69B624A169A50010BE4A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				505A69B724A169A50010BE4A /* ProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		505A69B824A169A50010BE4A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				505A69B924A169A50010BE4A /* ProfileLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		505A69BA24A169A50010BE4A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				505A69BB24A169A50010BE4A /* ProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		505A69C824A182CF0010BE4A /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				505A69C924A182EA0010BE4A /* UIColor+Extension.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		5098226D249D15450020A5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +715,10 @@
 		509822AD249D17E70020A5A5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				505A69AC24A169A50010BE4A /* ProfileModule */,
+				505A699224A169170010BE4A /* QRCodeScannerModule */,
+				505A697824A167D20010BE4A /* WalletTransactionsModule */,
+				505A695E24A164930010BE4A /* HomeModule */,
 				505A693224A12FB10010BE4A /* Login Module */,
 				509822AE249D17F30020A5A5 /* Root Module */,
 			);
@@ -406,6 +771,7 @@
 		509822C1249D22F60020A5A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				505A69C824A182CF0010BE4A /* UIColor */,
 				505A695524A1546D0010BE4A /* Realm */,
 				505A694D24A145CB0010BE4A /* UIViewController */,
 				505A694E24A145DE0010BE4A /* UIView */,
@@ -540,9 +906,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505A69BF24A169A50010BE4A /* ProfileViewController.xib in Resources */,
+				505A698B24A167D20010BE4A /* WalletTransactionsViewController.xib in Resources */,
 				509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */,
 				509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */,
+				505A69A524A169170010BE4A /* QRCodeScannerViewController.xib in Resources */,
 				505A694524A12FB10010BE4A /* LoginViewController.xib in Resources */,
+				505A697124A164930010BE4A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,22 +1040,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505A698F24A167D20010BE4A /* WalletTransactionsRouter.swift in Sources */,
+				505A696F24A164930010BE4A /* HomeContract.swift in Sources */,
+				505A696E24A164930010BE4A /* HomeViewModel.swift in Sources */,
 				509822B2249D182C0020A5A5 /* RootRouter.swift in Sources */,
 				505A695024A146190010BE4A /* UIViewController+Keyboard.swift in Sources */,
 				505A694324A12FB10010BE4A /* LoginContract.swift in Sources */,
+				505A698C24A167D20010BE4A /* WalletTransactionsViewController.swift in Sources */,
+				505A69A624A169170010BE4A /* QRCodeScannerViewController.swift in Sources */,
 				505A694424A12FB10010BE4A /* LoginPresenter.swift in Sources */,
+				505A698824A167D20010BE4A /* WalletTransactionsViewModel.swift in Sources */,
+				505A697424A164930010BE4A /* HomeLocalizatedStrings.swift in Sources */,
+				505A69A224A169170010BE4A /* QRCodeScannerViewModel.swift in Sources */,
+				505A697324A164930010BE4A /* HomeInteractor.swift in Sources */,
+				505A698D24A167D20010BE4A /* WalletTransactionsInteractor.swift in Sources */,
 				505A695724A154830010BE4A /* Realm+Extensions.swift in Sources */,
 				509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */,
+				505A69A724A169170010BE4A /* QRCodeScannerInteractor.swift in Sources */,
+				505A69CA24A182EA0010BE4A /* UIColor+Extension.swift in Sources */,
+				505A69C224A169A50010BE4A /* ProfileLocalizatedStrings.swift in Sources */,
 				505A694624A12FB10010BE4A /* LoginViewController.swift in Sources */,
+				505A69BE24A169A50010BE4A /* ProfilePresenter.swift in Sources */,
+				505A698A24A167D20010BE4A /* WalletTransactionsPresenter.swift in Sources */,
+				505A69A924A169170010BE4A /* QRCodeScannerRouter.swift in Sources */,
+				505A69BC24A169A50010BE4A /* ProfileViewModel.swift in Sources */,
+				505A697524A164930010BE4A /* HomeRouter.swift in Sources */,
 				505A695B24A155410010BE4A /* UserEntity.swift in Sources */,
+				505A698E24A167D20010BE4A /* WalletTransactionsLocalizatedStrings.swift in Sources */,
 				5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */,
 				505A694C24A13BA30010BE4A /* UIView+IBInspectable.swift in Sources */,
 				505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */,
+				505A69BD24A169A50010BE4A /* ProfileContract.swift in Sources */,
 				505A695424A154110010BE4A /* UserDatabaseService.swift in Sources */,
+				505A697024A164930010BE4A /* HomePresenter.swift in Sources */,
+				505A69C324A169A50010BE4A /* ProfileRouter.swift in Sources */,
+				505A697224A164930010BE4A /* HomeViewController.swift in Sources */,
 				505A694824A12FB10010BE4A /* LoginLocalizatedStrings.swift in Sources */,
 				505A694924A12FB10010BE4A /* LoginRouter.swift in Sources */,
+				505A69C124A169A50010BE4A /* ProfileInteractor.swift in Sources */,
+				505A69A324A169170010BE4A /* QRCodeScannerContract.swift in Sources */,
 				509822B5249D18830020A5A5 /* RootContract.swift in Sources */,
+				505A69C024A169A50010BE4A /* ProfileViewController.swift in Sources */,
 				505A694724A12FB10010BE4A /* LoginInteractor.swift in Sources */,
+				505A698924A167D20010BE4A /* WalletTransactionsContract.swift in Sources */,
+				505A69C524A17DD80010BE4A /* HomeImages.swift in Sources */,
+				505A69A824A169170010BE4A /* QRCodeScannerLocalizatedStrings.swift in Sources */,
+				505A69A424A169170010BE4A /* QRCodeScannerPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
