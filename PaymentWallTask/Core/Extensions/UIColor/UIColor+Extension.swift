@@ -34,4 +34,8 @@ extension UIColor {
     @nonobjc class var lightningYellow: UIColor {
         return UIColor(hexString: "#fdc113")
     }
+    
+    @nonobjc class var suvaGrey: UIColor {
+        return UIColor(hexString: "#8A8A8A")
+    }
 }

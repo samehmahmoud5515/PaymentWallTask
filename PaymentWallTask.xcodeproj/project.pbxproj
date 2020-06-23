@@ -62,6 +62,11 @@
 		509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50982282249D154F0020A5A5 /* Assets.xcassets */; };
 		509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822C3249D23130020A5A5 /* UIView+Constraints.swift */; };
 		509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509822C5249D25500020A5A5 /* LaunchScreen.storyboard */; };
+		50F7294824A204DF00C719B0 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7294624A204DF00C719B0 /* TransactionCell.swift */; };
+		50F7294924A204DF00C719B0 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7294724A204DF00C719B0 /* TransactionCell.xib */; };
+		50F7294C24A20CC900C719B0 /* TransactionTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7294B24A20CC900C719B0 /* TransactionTableViewHeaderView.swift */; };
+		50F7295324A224A900C719B0 /* WalletHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7295124A224A900C719B0 /* WalletHeaderView.swift */; };
+		50F7295424A224A900C719B0 /* WalletHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7295224A224A900C719B0 /* WalletHeaderView.xib */; };
 		9C7ED93E2A3A7FBACEE7BF71 /* Pods_PaymentWallTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */; };
 		A0E03D4F941BD4364038E8C9 /* Pods_PaymentWallTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023E13161C7E88ED8CE1A264 /* Pods_PaymentWallTask.framework */; };
 		FD785D7F59AC7A9883DF0926 /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F983F305D95765C14070ABC /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework */; };
@@ -149,6 +154,11 @@
 		509822B4249D18830020A5A5 /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
 		509822C3249D23130020A5A5 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		509822C6249D25500020A5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50F7294624A204DF00C719B0 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		50F7294724A204DF00C719B0 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		50F7294B24A20CC900C719B0 /* TransactionTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewHeaderView.swift; sourceTree = "<group>"; };
+		50F7295124A224A900C719B0 /* WalletHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletHeaderView.swift; sourceTree = "<group>"; };
+		50F7295224A224A900C719B0 /* WalletHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletHeaderView.xib; sourceTree = "<group>"; };
 		662B058A596B1AE5CD825D61 /* Pods-PaymentWallTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTask.debug.xcconfig"; path = "Target Support Files/Pods-PaymentWallTask/Pods-PaymentWallTask.debug.xcconfig"; sourceTree = "<group>"; };
 		B90A29F7E76E1813E0F3CF53 /* Pods-PaymentWallTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTask.release.xcconfig"; path = "Target Support Files/Pods-PaymentWallTask/Pods-PaymentWallTask.release.xcconfig"; sourceTree = "<group>"; };
 		C817DF64767C859A823617DD /* Pods-PaymentWallTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentWallTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -413,7 +423,7 @@
 				505A697924A167D20010BE4A /* ViewModel */,
 				505A697B24A167D20010BE4A /* Contract */,
 				505A697D24A167D20010BE4A /* Presenter */,
-				505A697F24A167D20010BE4A /* ViewController */,
+				505B986624A20351002B3752 /* View */,
 				505A698224A167D20010BE4A /* Interactor */,
 				505A698424A167D20010BE4A /* Localization */,
 				505A698624A167D20010BE4A /* Router */,
@@ -628,6 +638,25 @@
 			path = UIColor;
 			sourceTree = "<group>";
 		};
+		505B986624A20351002B3752 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				505B986724A2035F002B3752 /* SubViews */,
+				505A697F24A167D20010BE4A /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		505B986724A2035F002B3752 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				50F7295024A2247300C719B0 /* WalletHeaderView */,
+				50F7294A24A20C9E00C719B0 /* TableViewHeader */,
+				50F7294524A204B900C719B0 /* Cell */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		5098226D249D15450020A5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -787,6 +816,32 @@
 			path = "UIView+Constraint";
 			sourceTree = "<group>";
 		};
+		50F7294524A204B900C719B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				50F7294624A204DF00C719B0 /* TransactionCell.swift */,
+				50F7294724A204DF00C719B0 /* TransactionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		50F7294A24A20C9E00C719B0 /* TableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				50F7294B24A20CC900C719B0 /* TransactionTableViewHeaderView.swift */,
+			);
+			path = TableViewHeader;
+			sourceTree = "<group>";
+		};
+		50F7295024A2247300C719B0 /* WalletHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				50F7295124A224A900C719B0 /* WalletHeaderView.swift */,
+				50F7295224A224A900C719B0 /* WalletHeaderView.xib */,
+			);
+			path = WalletHeaderView;
+			sourceTree = "<group>";
+		};
 		F46AC0965E4D4814A385E68E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -907,7 +962,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				505A69BF24A169A50010BE4A /* ProfileViewController.xib in Resources */,
+				50F7295424A224A900C719B0 /* WalletHeaderView.xib in Resources */,
 				505A698B24A167D20010BE4A /* WalletTransactionsViewController.xib in Resources */,
+				50F7294924A204DF00C719B0 /* TransactionCell.xib in Resources */,
 				509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */,
 				509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */,
 				505A69A524A169170010BE4A /* QRCodeScannerViewController.xib in Resources */,
@@ -1068,11 +1125,13 @@
 				505A695B24A155410010BE4A /* UserEntity.swift in Sources */,
 				505A698E24A167D20010BE4A /* WalletTransactionsLocalizatedStrings.swift in Sources */,
 				5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */,
+				50F7294C24A20CC900C719B0 /* TransactionTableViewHeaderView.swift in Sources */,
 				505A694C24A13BA30010BE4A /* UIView+IBInspectable.swift in Sources */,
 				505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */,
 				505A69BD24A169A50010BE4A /* ProfileContract.swift in Sources */,
 				505A695424A154110010BE4A /* UserDatabaseService.swift in Sources */,
 				505A697024A164930010BE4A /* HomePresenter.swift in Sources */,
+				50F7295324A224A900C719B0 /* WalletHeaderView.swift in Sources */,
 				505A69C324A169A50010BE4A /* ProfileRouter.swift in Sources */,
 				505A697224A164930010BE4A /* HomeViewController.swift in Sources */,
 				505A694824A12FB10010BE4A /* LoginLocalizatedStrings.swift in Sources */,
@@ -1083,6 +1142,7 @@
 				505A69C024A169A50010BE4A /* ProfileViewController.swift in Sources */,
 				505A694724A12FB10010BE4A /* LoginInteractor.swift in Sources */,
 				505A698924A167D20010BE4A /* WalletTransactionsContract.swift in Sources */,
+				50F7294824A204DF00C719B0 /* TransactionCell.swift in Sources */,
 				505A69C524A17DD80010BE4A /* HomeImages.swift in Sources */,
 				505A69A824A169170010BE4A /* QRCodeScannerLocalizatedStrings.swift in Sources */,
 				505A69A424A169170010BE4A /* QRCodeScannerPresenter.swift in Sources */,
