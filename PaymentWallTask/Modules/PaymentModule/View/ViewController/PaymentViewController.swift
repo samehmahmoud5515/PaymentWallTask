@@ -39,6 +39,7 @@ class PaymentViewController: UIViewController, PaymentViewControllerProtocol {
 
 }
 
+//MARK: - UI Setup
 extension PaymentViewController {
     
     private func setupUI() {
@@ -94,6 +95,7 @@ extension PaymentViewController {
         view.addSubview(paymentSuccessedView)
         paymentSuccessedView.addCenterConstraints(vertical: view.centerYAnchor, horizontal: view.centerXAnchor)
         let viewSize = view.bounds.size
+        //adjust constraints for small sizes
         paymentSuccessedView.addWidthConstraints(width: 307 > viewSize.width ? viewSize.width * 0.8 : 307)
         paymentSuccessedView.addHeightConstraints(height: 426 > viewSize.height ? viewSize.height : 426)
     }

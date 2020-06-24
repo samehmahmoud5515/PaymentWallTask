@@ -16,20 +16,15 @@ struct WalletTransactionsViewModel {
     let localization =  WalletTransactionsLocalization()
 }
 
-struct TransactionEntity {
-    
-}
-
-
 
 struct CategorizedTransaction {
     var header: String
-    var items: [TransactionEntity]
+    var items: [Transaction]
 }
 
 extension CategorizedTransaction: SectionModelType {
     
-    init(original: CategorizedTransaction, items: [TransactionEntity]) {
+    init(original: CategorizedTransaction, items: [Transaction]) {
         self = original
         self.items = items
     }
