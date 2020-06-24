@@ -110,7 +110,7 @@ extension LoginViewController {
     
     private func bindPasswordTextSubjectWithPasswordTextField() {
         guard let viewModel = presenter?.viewModel else { return }
-        emailTextField.rx.text
+        passwordTextField.rx.text
             .compactMap { $0 }
             .bind(to: viewModel.passwordText)
             .disposed(by: disposeBag)
@@ -118,5 +118,7 @@ extension LoginViewController {
 }
 
 extension LoginViewController: LoginViewControllerProtocol {
-    
+    func displayAlertWith(title: String?, message: String?) {
+        showDefaultAlert(title: title, message: message, okTitle: presenter?.viewModel.localization.ok)
+    }
 }

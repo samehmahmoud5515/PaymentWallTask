@@ -9,7 +9,6 @@
 import Foundation
 
 fileprivate struct KeyChainKeys {
-    let serviceName = "com.payment-wall.keys"
     let loggedInEmail = "payment_wall_loggedin_email"
 }
 

@@ -193,7 +193,7 @@
     </objects>
     <resources>
         <image name="common_bg_img" width="125" height="280.5"/>
-        <image name="common_faster_pay_logo" width="122" height="18"/>
-        <image name="common_passport_logo" width="65.5" height="10"/>
+        <image name="common_faster_pay_logo" width="244" height="36"/>
+        <image name="common_passport_logo" width="164" height="24.5"/>
     </resources>
 </document>

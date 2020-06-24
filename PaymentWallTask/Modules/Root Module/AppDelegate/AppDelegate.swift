@@ -20,10 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configureRootController()
 
         return true
-    }
-
-
-    
+    }    
     
 }
 
