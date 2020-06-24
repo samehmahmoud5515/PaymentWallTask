@@ -18,7 +18,7 @@ class LoginRouter: LoginRouterProtocol {
     
     //MARK:- Assemple
     static func assembleModule() -> UIViewController {
-        // Change to get view from storyboard if not using progammatic UI
+        
         let view = LoginViewController()
         let interactor = LoginInteractor()
         let router = LoginRouter()
@@ -33,7 +33,11 @@ class LoginRouter: LoginRouterProtocol {
     
     //MARK: - Routing
     func go(to route:LoginRoute) {
-        
+        switch route {
+        case .home:
+            let homeViewController = HomeRouter.assembleModule()
+            viewController?.navigationController?.setViewControllers([homeViewController], animated: false)
+        }
     }
 
 }

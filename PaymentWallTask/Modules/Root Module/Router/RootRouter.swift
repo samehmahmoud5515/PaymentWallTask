@@ -33,8 +33,8 @@ extension RootRouter: RootRouterProtocol {
     func go(to route: RootRoute) {
         switch route {
         case .splash:
-            let loginVc = HomeRouter.assembleModule()
-            navigationController.setViewControllers([loginVc], animated: false)
+            let splashVC = SplashRouter.assembleModule()
+            navigationController.setViewControllers([splashVC], animated: false)
         }
     }
     

@@ -12,6 +12,7 @@ import RxSwift
 
 //MARK: - Router
 enum LoginRoute {
+    case home
 }
 
 protocol LoginRouterProtocol: class {
@@ -30,7 +31,7 @@ protocol LoginPresenterProtocol: class {
 
 
 //MARK: - Interactor
-protocol LoginInteractorProtocol: class {
+protocol LoginInteractorProtocol: LoginProtocol {
 
 }
 
@@ -40,4 +41,5 @@ protocol LoginInteractorProtocol: class {
 protocol LoginViewControllerProtocol: class {
 
     var presenter: LoginPresenterProtocol?  { get set }
+    func displayAlertWith(title: String?, message: String?)
 }
