@@ -64,6 +64,15 @@
 		505D30E524A256D1003D3B21 /* PaymentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30DD24A256D1003D3B21 /* PaymentRouter.swift */; };
 		505D30EA24A2A919003D3B21 /* PaymentSuccessedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30E824A2A919003D3B21 /* PaymentSuccessedView.swift */; };
 		505D30EB24A2A919003D3B21 /* PaymentSuccessedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505D30E924A2A919003D3B21 /* PaymentSuccessedView.xib */; };
+		505D30EF24A2C6F5003D3B21 /* TransactionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30EE24A2C6F5003D3B21 /* TransactionEntity.swift */; };
+		505D30F224A2CBE2003D3B21 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30F124A2CBE2003D3B21 /* Transaction.swift */; };
+		505D30F424A2CBFA003D3B21 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30F324A2CBFA003D3B21 /* Currency.swift */; };
+		505D30F624A2CC3B003D3B21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30F524A2CC3B003D3B21 /* User.swift */; };
+		505D30F924A2DA47003D3B21 /* UserInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30F824A2DA47003D3B21 /* UserInfoProtocol.swift */; };
+		505D30FC24A2DD6B003D3B21 /* StandardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30FB24A2DD6B003D3B21 /* StandardError.swift */; };
+		505D30FF24A2DFEC003D3B21 /* EncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30FE24A2DFEC003D3B21 /* EncryptionService.swift */; };
+		505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310124A2E378003D3B21 /* KeyChainService.swift */; };
+		505D310524A2E5DF003D3B21 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310424A2E5DF003D3B21 /* Data+Extension.swift */; };
 		5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982279249D15450020A5A5 /* AppDelegate.swift */; };
 		50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */; };
 		5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */; };
@@ -161,6 +170,15 @@
 		505D30DD24A256D1003D3B21 /* PaymentRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRouter.swift; sourceTree = "<group>"; };
 		505D30E824A2A919003D3B21 /* PaymentSuccessedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessedView.swift; sourceTree = "<group>"; };
 		505D30E924A2A919003D3B21 /* PaymentSuccessedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentSuccessedView.xib; sourceTree = "<group>"; };
+		505D30EE24A2C6F5003D3B21 /* TransactionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEntity.swift; sourceTree = "<group>"; };
+		505D30F124A2CBE2003D3B21 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		505D30F324A2CBFA003D3B21 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		505D30F524A2CC3B003D3B21 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		505D30F824A2DA47003D3B21 /* UserInfoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoProtocol.swift; sourceTree = "<group>"; };
+		505D30FB24A2DD6B003D3B21 /* StandardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardError.swift; sourceTree = "<group>"; };
+		505D30FE24A2DFEC003D3B21 /* EncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionService.swift; sourceTree = "<group>"; };
+		505D310124A2E378003D3B21 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		505D310424A2E5DF003D3B21 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		50982276249D15450020A5A5 /* PaymentWallTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentWallTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50982279249D15450020A5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50982282249D154F0020A5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -330,6 +348,8 @@
 		505A695124A153E90010BE4A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				505D310024A2E362003D3B21 /* KeyChainService */,
+				505D30FD24A2DFC3003D3B21 /* EncryptionService */,
 				505A695824A155200010BE4A /* Database */,
 			);
 			path = Services;
@@ -364,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				505A695A24A155410010BE4A /* UserEntity.swift */,
+				505D30EE24A2C6F5003D3B21 /* TransactionEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -769,6 +790,56 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		505D30F024A2CBBF003D3B21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				505D30F124A2CBE2003D3B21 /* Transaction.swift */,
+				505D30F324A2CBFA003D3B21 /* Currency.swift */,
+				505D30F524A2CC3B003D3B21 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		505D30F724A2DA31003D3B21 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				505D30F824A2DA47003D3B21 /* UserInfoProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		505D30FA24A2DD4C003D3B21 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				505D30FB24A2DD6B003D3B21 /* StandardError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		505D30FD24A2DFC3003D3B21 /* EncryptionService */ = {
+			isa = PBXGroup;
+			children = (
+				505D30FE24A2DFEC003D3B21 /* EncryptionService.swift */,
+			);
+			path = EncryptionService;
+			sourceTree = "<group>";
+		};
+		505D310024A2E362003D3B21 /* KeyChainService */ = {
+			isa = PBXGroup;
+			children = (
+				505D310124A2E378003D3B21 /* KeyChainService.swift */,
+			);
+			path = KeyChainService;
+			sourceTree = "<group>";
+		};
+		505D310324A2E5CF003D3B21 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				505D310424A2E5DF003D3B21 /* Data+Extension.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		5098226D249D15450020A5A5 = {
 			isa = PBXGroup;
 			children = (
@@ -904,6 +975,9 @@
 		509822C0249D22EC0020A5A5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				505D30FA24A2DD4C003D3B21 /* Error */,
+				505D30F724A2DA31003D3B21 /* Protocols */,
+				505D30F024A2CBBF003D3B21 /* Models */,
 				505A695124A153E90010BE4A /* Services */,
 				509822C1249D22F60020A5A5 /* Extensions */,
 			);
@@ -913,6 +987,7 @@
 		509822C1249D22F60020A5A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				505D310324A2E5CF003D3B21 /* Data */,
 				505A69C824A182CF0010BE4A /* UIColor */,
 				505A695524A1546D0010BE4A /* Realm */,
 				505A694D24A145CB0010BE4A /* UIViewController */,
@@ -1222,8 +1297,10 @@
 			files = (
 				505A698F24A167D20010BE4A /* WalletTransactionsRouter.swift in Sources */,
 				505A696F24A164930010BE4A /* HomeContract.swift in Sources */,
+				505D310524A2E5DF003D3B21 /* Data+Extension.swift in Sources */,
 				505A696E24A164930010BE4A /* HomeViewModel.swift in Sources */,
 				509822B2249D182C0020A5A5 /* RootRouter.swift in Sources */,
+				505D30F624A2CC3B003D3B21 /* User.swift in Sources */,
 				505A695024A146190010BE4A /* UIViewController+Keyboard.swift in Sources */,
 				505A694324A12FB10010BE4A /* LoginContract.swift in Sources */,
 				505D30E424A256D1003D3B21 /* PaymentLocalizatedStrings.swift in Sources */,
@@ -1234,7 +1311,11 @@
 				505A697424A164930010BE4A /* HomeLocalizatedStrings.swift in Sources */,
 				505A69A224A169170010BE4A /* QRCodeScannerViewModel.swift in Sources */,
 				505A697324A164930010BE4A /* HomeInteractor.swift in Sources */,
+				505D30FF24A2DFEC003D3B21 /* EncryptionService.swift in Sources */,
+				505D30F924A2DA47003D3B21 /* UserInfoProtocol.swift in Sources */,
+				505D30F224A2CBE2003D3B21 /* Transaction.swift in Sources */,
 				505A698D24A167D20010BE4A /* WalletTransactionsInteractor.swift in Sources */,
+				505D30F424A2CBFA003D3B21 /* Currency.swift in Sources */,
 				505A695724A154830010BE4A /* Realm+Extensions.swift in Sources */,
 				509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */,
 				505A69A724A169170010BE4A /* QRCodeScannerInteractor.swift in Sources */,
@@ -1253,9 +1334,11 @@
 				505D30DE24A256D1003D3B21 /* PaymentViewModel.swift in Sources */,
 				50F7294C24A20CC900C719B0 /* TransactionTableViewHeaderView.swift in Sources */,
 				505A694C24A13BA30010BE4A /* UIView+IBInspectable.swift in Sources */,
+				505D30EF24A2C6F5003D3B21 /* TransactionEntity.swift in Sources */,
 				505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */,
 				505D30E324A256D1003D3B21 /* PaymentInteractor.swift in Sources */,
 				505A69BD24A169A50010BE4A /* ProfileContract.swift in Sources */,
+				505D30FC24A2DD6B003D3B21 /* StandardError.swift in Sources */,
 				505A695424A154110010BE4A /* UserDatabaseService.swift in Sources */,
 				50D14E3224A244EF009B648A /* UIViewController+Alerts.swift in Sources */,
 				505A697024A164930010BE4A /* HomePresenter.swift in Sources */,
@@ -1264,6 +1347,7 @@
 				505A69C324A169A50010BE4A /* ProfileRouter.swift in Sources */,
 				505D30EA24A2A919003D3B21 /* PaymentSuccessedView.swift in Sources */,
 				505A697224A164930010BE4A /* HomeViewController.swift in Sources */,
+				505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */,
 				505D30E024A256D1003D3B21 /* PaymentPresenter.swift in Sources */,
 				505A694824A12FB10010BE4A /* LoginLocalizatedStrings.swift in Sources */,
 				505A694924A12FB10010BE4A /* LoginRouter.swift in Sources */,

@@ -19,46 +19,64 @@ class UserDatabaseService {
         do {
             guard let defaultUrl = Realm.Configuration.defaultConfiguration.fileURL else { return }
             
-            let config = Realm.Configuration(
+            let config = Realm.Configuration (
                 fileURL: defaultUrl.deletingLastPathComponent().appendingPathComponent("User.realm")
-                , schemaVersion: 0
+                , schemaVersion: 1
                 , deleteRealmIfMigrationNeeded: true
-                , objectTypes: [UserEntity.self]
+                , objectTypes: [UserEntity.self, TransactionEntity.self]
             )
             
             realm = try Realm(configuration: config)
-            try self.realm.safeWrite {
-                self.realm.deleteAll()
-            }
+
         } catch {
             print(error)
         }
     }
     
-    func saveUser(user: UserEntity) -> Observable<Void> {
+    func saveUser(user: User) -> Observable<Void> {
         do {
             try self.realm.safeWrite {
-                self.realm.add(user, update: .modified)
+                self.realm.add(user.toUserEntity, update: .modified)
             }
         } catch {
             return Observable.error(error)
         }
         guard let entity = realm.objects(UserEntity.self)
-            .first else { return Observable.empty() }
+            .first else { return Observable.error(StandardError.notSavedInDatabase) }
         return Observable.from(object: entity)
             .map { _ in () }
     }
     
-    func fetchAllUsersFromDB() -> Observable<[UserEntity]> {
+    func fetchAllUsersFromDB() -> Observable<[User]> {
         let entities = realm.objects(UserEntity.self)
-        return Observable.array(from: entities)
+        return Observable.array(from: entities).map { $0.map { $0.toUser } }
     }
     
-    func isUserExistedInDB() -> Observable<Bool> {
-        let entity = realm.objects(UserEntity.self)
-        return Observable.collection(from: entity)
-            .map { !$0.isEmpty }
-            .share()
+    func fetchUserFromDBWith(email: String) -> Observable<User> {
+        let entities = realm.objects(UserEntity.self)
+            .filter(NSPredicate(format: "email = %@", email))
+        guard let entity = entities.first else {
+            return Observable.error(StandardError.notFoundInDatabase)
+        }
+        return Observable.from(object: entity).map { $0.toUser }
+    }
+    
+    func isEmailExist(email: String) -> Observable<Bool> {
+        let entities = realm.objects(UserEntity.self)
+            .filter(NSPredicate(format: "email = %@", email))
+        guard (entities.first != nil) else {
+            return Observable.just(false)
+        }
+        return Observable.just(true)
+    }
+    
+    func fetchUserTransactions(with email: String) -> Observable<[Transaction]> {
+        let entities = realm.objects(UserEntity.self)
+            .filter(NSPredicate(format: "email = %@", email))
+        guard let entity = entities.first else {
+            return Observable.error(StandardError.notFoundInDatabase)
+        }
+        return Observable.from(object: entity).map { $0.transactions }.map { $0.map { $0.toTransaction }}
     }
     
     func deleteAllCachedUsers() -> Observable<Void> {
