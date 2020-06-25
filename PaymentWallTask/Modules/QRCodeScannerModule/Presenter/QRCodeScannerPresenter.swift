@@ -39,12 +39,20 @@ class QRCodeScannerPresenter: QRCodeScannerPresenterProtocol {
         // map capture string form camera to Transaction Object
         viewModel.didCaptureString
             .map { [weak self] in return self?.interactor?.parseTransaction(from: $0)}
-            .compactMap { $0 }
             .subscribe(onNext: { [weak self] transaction in
-                self?.viewModel.transaction.accept(transaction)
-            }, onError: { error in
-                
+                if let transaction = transaction {
+                    self?.viewModel.transaction.accept(transaction)
+                } else {
+                    self?.handleParsingError()
+                }
             }).disposed(by: disposeBag)
+    }
+    
+    private func handleParsingError() {
+        let localization = viewModel.localization
+        viewController?.displayDefaultAlert(title: localization.parsingError, message: localization.wrongFormattedQRCode, okTitle: localization.ok, actionBlock: { [weak self] in
+            self?.viewController?.startCaptureRunning()
+        })
     }
     
     private func handleTransactionDidCaptured() {
