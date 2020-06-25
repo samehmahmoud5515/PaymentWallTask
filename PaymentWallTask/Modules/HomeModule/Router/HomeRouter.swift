@@ -46,10 +46,11 @@ class HomeRouter: HomeRouterProtocol {
     
     private static func createWalletTransactionController() -> UINavigationController {
         let images = HomeImages()
+        let title = HomeLocalization().wallet
         let walletController = WalletTransactionsRouter.assembleModule()
         let walletNavigation = UINavigationController(rootViewController: walletController)
         walletNavigation.setNavigationBarHidden(true, animated: false)
-        walletController.tabBarItem = UITabBarItem(title: "Wallet",
+        walletController.tabBarItem = UITabBarItem(title: title,
                                                    image: UIImage(named: images.walletUnselectedImg),
                                                    selectedImage: UIImage(named: images.walletSelectedImg))
         return walletNavigation
@@ -57,11 +58,12 @@ class HomeRouter: HomeRouterProtocol {
     
     private static func createQRScanerController() -> UINavigationController {
         let images = HomeImages()
+        let title = HomeLocalization().scanner
         let scannerController = QRCodeScannerRouter.assembleModule()
         let scannerNavigation = UINavigationController(rootViewController: scannerController)
         scannerNavigation.navigationBar.tintColor = .white
         scannerNavigation.setNavigationBarHidden(true, animated: false)
-        scannerController.tabBarItem = UITabBarItem(title: "Scanner",
+        scannerController.tabBarItem = UITabBarItem(title: title,
                                                     image: UIImage(named: images.scannerUnselectedImg),
                                                     selectedImage: UIImage(named: images.scannerSelectedImg))
         return scannerNavigation
@@ -69,10 +71,11 @@ class HomeRouter: HomeRouterProtocol {
     
     private static func createProfileController() -> UINavigationController {
         let images = HomeImages()
+        let title = HomeLocalization().profile
         let profilerController = ProfileRouter.assembleModule()
         let profileNavigation = UINavigationController(rootViewController: profilerController)
         profileNavigation.setNavigationBarHidden(true, animated: false)
-        profilerController.tabBarItem = UITabBarItem(title: "Profile",
+        profilerController.tabBarItem = UITabBarItem(title: title,
                                                      image: UIImage(named: images.profileUnselctedImg),
                                                      selectedImage: UIImage(named: images.profileSelectedImg))
         return profileNavigation
