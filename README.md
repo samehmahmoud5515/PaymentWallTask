@@ -13,7 +13,7 @@ Keychain for storing the logged in account.
 RxRealm So when a when a record in database changed The application get the updates.
 
 
-----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 QR Codes:
 
@@ -34,3 +34,16 @@ And in Text section add it in JSON for for example:
 }
 
 Note: Balance and Currency are radom for every new user.
+
+---------------------------------------------------------------------------------------------------------------------
+
+To Run To simulator or device:
+
+1- open terminal and change directory with cd then the path of project folder, for example cd desktop/PaymentWallTask 
+
+2- run "pod install" command 
+
+3- build and run.
+
+
+
