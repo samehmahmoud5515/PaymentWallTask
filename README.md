@@ -17,7 +17,7 @@ RxRealm So when a when a record in database changed The application get the upda
 
 QR Codes:
 
-here's the link for the three different cucrrencies generated qr codes
+Here's the link for the three different cucrrencies generated qr codes:
 
 https://drive.google.com/drive/folders/10flCQxoz4ZlK0Rq_TTdprX3G5_HmpSFF
 
