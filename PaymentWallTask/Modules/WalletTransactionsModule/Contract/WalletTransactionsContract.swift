@@ -30,9 +30,8 @@ protocol WalletTransactionsPresenterProtocol: class {
 
 
 //MARK: - Interactor
-protocol WalletTransactionsInteractorProtocol: class {
-
-    
+protocol WalletTransactionsInteractorProtocol: UserInfoProtocol, TransactionProtocol {
+    func cateogrizeTransactionWithDate(transactions: [Transaction]) -> [CategorizedTransaction]
 }
 
 
@@ -41,4 +40,6 @@ protocol WalletTransactionsInteractorProtocol: class {
 protocol WalletTransactionsViewControllerProtocol: class {
     
     var presenter: WalletTransactionsPresenterProtocol?  { get set }
+    func removeEmptyTransactionsView()
+    func displayEmptyTransactionsView()
 }

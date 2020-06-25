@@ -11,8 +11,8 @@ import RealmSwift
 class TransactionEntity: Object {
     @objc dynamic var paymentAmount: Double = 0.0
     @objc dynamic var businessName: String = ""
-    @objc dynamic var paymentDescription: String = ""
     @objc dynamic var currency: String = ""
+    @objc dynamic var date: Date?
 }
 
 // MARK: - Mapping
@@ -20,9 +20,9 @@ extension TransactionEntity {
     var toTransaction: Transaction {
         var transaction = Transaction()
         transaction.businessName = businessName
-        transaction.description = paymentDescription
         transaction.currency = Currency(rawValue: currency)
         transaction.paymentAmount = paymentAmount
+        transaction.date = date
         return transaction
     }
 }

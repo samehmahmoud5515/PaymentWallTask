@@ -16,6 +16,10 @@ struct PaymentViewModel {
     //taps
     let payButtonTap = PublishRelay<Void>()
     let transactionSuccessOkButtonTap = PublishRelay<Void>()
+    let userBalance = PublishSubject<String>()
+    
+    //errors
+    let errorDidHappendWhilePayment = PublishSubject<Error>()
     
     //localiztion
     let localization = PaymentLocalization()

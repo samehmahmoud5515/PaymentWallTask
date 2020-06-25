@@ -35,7 +35,15 @@ class PaymentRouter: PaymentRouterProtocol {
     
     //MARK: - Routing
     func go(to route:PaymentRoute) {
-        
+        switch route {
+        case .back:
+            if let homeVC = viewController?.tabBarController {
+                viewController?.navigationController?.popViewController(animated: false)
+                homeVC.selectedIndex = 0
+            } else {
+                viewController?.navigationController?.popViewController(animated: true)
+            }
+        }
     }
 
 }

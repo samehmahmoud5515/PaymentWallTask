@@ -21,7 +21,7 @@ class UserDatabaseService {
             
             let config = Realm.Configuration (
                 fileURL: defaultUrl.deletingLastPathComponent().appendingPathComponent("User.realm")
-                , schemaVersion: 1
+                , schemaVersion: 3
                 , deleteRealmIfMigrationNeeded: true
                 , objectTypes: [UserEntity.self, TransactionEntity.self]
             )
@@ -74,9 +74,11 @@ class UserDatabaseService {
         let entities = realm.objects(UserEntity.self)
             .filter(NSPredicate(format: "email = %@", email))
         guard let entity = entities.first else {
-            return Observable.error(StandardError.notFoundInDatabase)
+            return Observable.just([])
         }
-        return Observable.from(object: entity).map { $0.transactions }.map { $0.map { $0.toTransaction }}
+        return Observable.from(object: entity)
+            .map { $0.transactions }
+            .map { $0.map { $0.toTransaction }}
     }
     
     func deleteAllCachedUsers() -> Observable<Void> {

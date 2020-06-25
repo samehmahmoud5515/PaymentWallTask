@@ -10,6 +10,7 @@ import Foundation
 
 struct WalletTransactionsLocalization {
     
-    
-
+    var emptyTransactions: String {
+        return "Your transactions will show up here"
+    }
 }

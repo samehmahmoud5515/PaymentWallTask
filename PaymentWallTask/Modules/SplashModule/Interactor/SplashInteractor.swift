@@ -11,9 +11,5 @@ import RxSwift
 
 class SplashInteractor: SplashInteractorProtocol {
     
-    var isThereLoggedUser: Bool {
-        let keyChainService = KeychainService()
-        return keyChainService.loggedInEmail != nil
-    }
  
 }

@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxDataSources
 
-class WalletTransactionsViewController: UIViewController, WalletTransactionsViewControllerProtocol {
+class WalletTransactionsViewController: UIViewController {
 
     
     //MARK: - Outlets
@@ -41,6 +41,7 @@ extension WalletTransactionsViewController {
         setupTableViewRowHeight()
         setupTableViewDelegate()
         setupTableViewBackgroundColor()
+        addRefreshControlToTableView()
     }
     
     private func registerTableViewCell() {
@@ -53,7 +54,7 @@ extension WalletTransactionsViewController {
     }
     
     private func setupTableViewRowHeight() {
-        tableView.rowHeight = 70
+        tableView.rowHeight = 62
     }
     
     private func setupTableViewDelegate() {
@@ -63,6 +64,11 @@ extension WalletTransactionsViewController {
     private func setupTableViewBackgroundColor() {
         tableView.backgroundColor = .white
     }
+    
+    private func addRefreshControlToTableView() {
+        let refreshControl = UIRefreshControl()
+        tableView.refreshControl = refreshControl
+    }
 }
 
 //MARK: - UI Binding
@@ -70,6 +76,8 @@ extension WalletTransactionsViewController {
     
     private func configuireUIBinding() {
         bindTransactionTableViewDatasource()
+        bindBalanceLabelTextWithUserBalannce()
+        bindReloadTransactionsWithRefreshControlPulled()
     }
     
     private func bindTransactionTableViewDatasource() {
@@ -77,7 +85,7 @@ extension WalletTransactionsViewController {
             configureCell: { (_, tv, indexPath, model) in
                 let cell = tv.dequeueReusableCell(withIdentifier:
                     "\(TransactionCell.self)") as? TransactionCell ?? TransactionCell()
-            
+                cell.updateUI(with: model)
                 return cell
             })
         
@@ -85,6 +93,21 @@ extension WalletTransactionsViewController {
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
     }
+    
+    private func bindBalanceLabelTextWithUserBalannce() {
+        presenter?.viewModel.userBalance
+            .bind(to: walletHeaderView.balanceLabel.rx.text)
+            .disposed(by: disposeBag)
+    }
+    
+    private func bindReloadTransactionsWithRefreshControlPulled() {
+        guard let viewModel = presenter?.viewModel else { return }
+        tableView.refreshControl?.rx
+            .controlEvent(.valueChanged)
+            .bind(to: viewModel.reloadFetchingTransactions)
+            .disposed(by: disposeBag)
+    }
+
 }
 
 //MARK: - UITableViewDelegate
@@ -96,5 +119,25 @@ extension WalletTransactionsViewController: UITableViewDelegate {
             headerView.updateTitle(title)
         }
         return headerView
+    }
+}
+
+extension WalletTransactionsViewController: WalletTransactionsViewControllerProtocol {
+
+    func displayEmptyTransactionsView() {
+        setupEmptyTransactionsView()
+    }
+    
+    private func setupEmptyTransactionsView() {
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: tableView.bounds.height))
+        titleLabel.textColor = .black
+        titleLabel.textAlignment = .center
+        titleLabel.text = presenter?.viewModel.localization.emptyTransactions
+        titleLabel.center = tableView.center
+        tableView.backgroundView = titleLabel
+    }
+    
+    func removeEmptyTransactionsView() {
+        tableView.backgroundView = nil
     }
 }

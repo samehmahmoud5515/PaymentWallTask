@@ -15,7 +15,6 @@ class PaymentViewController: UIViewController, PaymentViewControllerProtocol {
     
     //MARK: - Outlets
     @IBOutlet weak var businessNameLabel: UILabel!
-    @IBOutlet weak var describitionLabel: UILabel!
     @IBOutlet weak var amountToPayLabel: UILabel!
     @IBOutlet weak var userBalanceLabel: UILabel!
     @IBOutlet weak var payButton: UIButton!
@@ -48,11 +47,12 @@ extension PaymentViewController {
     }
     
     private func updateLabelsWithTransaction() {
-        guard let transaction = presenter?.viewModel.transaction else { return }
+        guard let transaction = presenter?.viewModel.transaction,
+            let localization = presenter?.viewModel.localization
+            else { return }
         businessNameLabel.text = transaction.businessName
-        describitionLabel.text = transaction.description
         amountToPayLabel.text = "\(transaction.paymentAmount) \(transaction.currency?.rawValue ?? "")"
-        payButton.setTitle("Pay \(transaction.paymentAmount)", for: .normal)
+        payButton.setTitle("\(localization.pay) \(transaction.paymentAmount) \(transaction.currency?.rawValue ?? "")", for: .normal)
     }
     
     private func setupNavigationBarUI() {
@@ -71,12 +71,19 @@ extension PaymentViewController {
     
     private func configuireBinding() {
         bindPayButtonTap()
+        bindUserBalanceLabelTextWithUserBalance()
     }
     
     private func bindPayButtonTap() {
         guard let viewModel = presenter?.viewModel else { return }
         payButton.rx.tap
             .bind(to: viewModel.payButtonTap)
+            .disposed(by: disposeBag)
+    }
+    
+    private func bindUserBalanceLabelTextWithUserBalance() {
+        presenter?.viewModel.userBalance
+            .bind(to: userBalanceLabel.rx.text)
             .disposed(by: disposeBag)
     }
 }
@@ -102,5 +109,9 @@ extension PaymentViewController {
     
     func removePaymentSuccessedView() {
         paymentSuccessedView?.removeFromSuperview()
+    }
+    
+    func displayAlertWith(title: String?, message: String) {
+        showDefaultAlert(title: title, message: message, okTitle: presenter?.viewModel.localization.ok)
     }
 }

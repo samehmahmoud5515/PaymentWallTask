@@ -31,8 +31,8 @@ protocol SplashPresenterProtocol: class {
 
 
 //MARK: - Interactor
-protocol SplashInteractorProtocol: class {
-    var isThereLoggedUser: Bool { get }
+protocol SplashInteractorProtocol: UserInfoProtocol {
+
 }
 
 
