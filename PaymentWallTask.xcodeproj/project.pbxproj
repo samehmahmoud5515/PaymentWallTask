@@ -72,6 +72,7 @@
 		505D30FC24A2DD6B003D3B21 /* StandardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30FB24A2DD6B003D3B21 /* StandardError.swift */; };
 		505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310124A2E378003D3B21 /* KeyChainService.swift */; };
 		505D310524A2E5DF003D3B21 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310424A2E5DF003D3B21 /* Data+Extension.swift */; };
+		506D8E2024A4A66200ABD63D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E1F24A4A66200ABD63D /* Date.swift */; };
 		5075F28024A3E53800A9BE60 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */; };
 		5075F29324A3F8B800A9BE60 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F28524A3F8B700A9BE60 /* SplashViewModel.swift */; };
 		5075F29424A3F8B800A9BE60 /* SplashContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F28724A3F8B700A9BE60 /* SplashContract.swift */; };
@@ -80,6 +81,7 @@
 		5075F29724A3F8B800A9BE60 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5075F28C24A3F8B700A9BE60 /* SplashViewController.xib */; };
 		5075F29824A3F8B800A9BE60 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F28E24A3F8B700A9BE60 /* SplashInteractor.swift */; };
 		5075F29A24A3F8B800A9BE60 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F29224A3F8B800A9BE60 /* SplashRouter.swift */; };
+		5087575E24A468DE00222C22 /* TransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087575D24A468DE00222C22 /* TransactionProtocol.swift */; };
 		5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982279249D15450020A5A5 /* AppDelegate.swift */; };
 		50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */; };
 		5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */; };
@@ -185,6 +187,7 @@
 		505D30FB24A2DD6B003D3B21 /* StandardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardError.swift; sourceTree = "<group>"; };
 		505D310124A2E378003D3B21 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		505D310424A2E5DF003D3B21 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		506D8E1F24A4A66200ABD63D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		5075F28524A3F8B700A9BE60 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		5075F28724A3F8B700A9BE60 /* SplashContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashContract.swift; sourceTree = "<group>"; };
@@ -193,6 +196,7 @@
 		5075F28C24A3F8B700A9BE60 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		5075F28E24A3F8B700A9BE60 /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		5075F29224A3F8B800A9BE60 /* SplashRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		5087575D24A468DE00222C22 /* TransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProtocol.swift; sourceTree = "<group>"; };
 		50982276249D15450020A5A5 /* PaymentWallTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentWallTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50982279249D15450020A5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50982282249D154F0020A5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -818,6 +822,7 @@
 			children = (
 				505D30F824A2DA47003D3B21 /* UserInfoProtocol.swift */,
 				5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */,
+				5087575D24A468DE00222C22 /* TransactionProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -844,6 +849,14 @@
 				505D310424A2E5DF003D3B21 /* Data+Extension.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		506D8E1E24A4A65400ABD63D /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E1F24A4A66200ABD63D /* Date.swift */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 		5075F28324A3F8B700A9BE60 /* SplashModule */ = {
@@ -1056,6 +1069,7 @@
 		509822C1249D22F60020A5A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				506D8E1E24A4A65400ABD63D /* Date */,
 				505D310324A2E5CF003D3B21 /* Data */,
 				505A69C824A182CF0010BE4A /* UIColor */,
 				505A695524A1546D0010BE4A /* Realm */,
@@ -1383,6 +1397,7 @@
 				505A697324A164930010BE4A /* HomeInteractor.swift in Sources */,
 				505D30F924A2DA47003D3B21 /* UserInfoProtocol.swift in Sources */,
 				505D30F224A2CBE2003D3B21 /* Transaction.swift in Sources */,
+				5087575E24A468DE00222C22 /* TransactionProtocol.swift in Sources */,
 				5075F29824A3F8B800A9BE60 /* SplashInteractor.swift in Sources */,
 				505A698D24A167D20010BE4A /* WalletTransactionsInteractor.swift in Sources */,
 				505D30F424A2CBFA003D3B21 /* Currency.swift in Sources */,
@@ -1395,6 +1410,7 @@
 				505A69C224A169A50010BE4A /* ProfileLocalizatedStrings.swift in Sources */,
 				505A694624A12FB10010BE4A /* LoginViewController.swift in Sources */,
 				505A69BE24A169A50010BE4A /* ProfilePresenter.swift in Sources */,
+				506D8E2024A4A66200ABD63D /* Date.swift in Sources */,
 				505D30E524A256D1003D3B21 /* PaymentRouter.swift in Sources */,
 				505A698A24A167D20010BE4A /* WalletTransactionsPresenter.swift in Sources */,
 				505A69A924A169170010BE4A /* QRCodeScannerRouter.swift in Sources */,

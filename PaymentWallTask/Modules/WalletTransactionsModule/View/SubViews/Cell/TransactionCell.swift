@@ -10,5 +10,16 @@ import UIKit
 
 class TransactionCell: UITableViewCell {
 
+    //MARK:- Outlets
+    @IBOutlet weak var businnessTitleLabel: UILabel!
+    @IBOutlet weak var paymentAmountLabel: UILabel!
     
+}
+
+extension TransactionCell {
+    
+    func updateUI(with transaction: Transaction) {
+        businnessTitleLabel.text = transaction.businessName
+        paymentAmountLabel.text = "\(transaction.paymentAmount) \(transaction.currency?.rawValue ?? "")"
+    }
 }

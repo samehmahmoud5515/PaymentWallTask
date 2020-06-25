@@ -40,8 +40,11 @@ class QRCodeScannerPresenter: QRCodeScannerPresenterProtocol {
         viewModel.didCaptureString
             .map { [weak self] in return self?.interactor?.parseTransaction(from: $0)}
             .compactMap { $0 }
-            .bind(to: viewModel.transaction)
-            .disposed(by: disposeBag)
+            .subscribe(onNext: { [weak self] transaction in
+                self?.viewModel.transaction.accept(transaction)
+            }, onError: { error in
+                
+            }).disposed(by: disposeBag)
     }
     
     private func handleTransactionDidCaptured() {

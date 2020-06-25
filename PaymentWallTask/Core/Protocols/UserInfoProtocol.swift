@@ -8,18 +8,18 @@
 
 import RxSwift
 
+
 protocol UserInfoProtocol {
-    func fetchAllUsers() -> Observable<[User]>
+    func getUserEmail() -> String?
     func saveUser(user: User) -> Observable<Void>
-    func fetchUserTransactions(with email: String) -> Observable<[Transaction]>
-    func updateTransactionForUser(email: String, transaction: Transaction) -> Observable<Void>
+    var currentUser: Observable<User> { get }
 }
 
 extension UserInfoProtocol {
     
-    func fetchAllUsers() -> Observable<[User]> {
-        let service = UserDatabaseService.shared
-        return service.fetchAllUsersFromDB()
+    func getUserEmail() -> String? {
+        let keyChainService = KeychainService()
+        return keyChainService.loggedInEmail
     }
     
     func saveUser(user: User) -> Observable<Void> {
@@ -27,19 +27,11 @@ extension UserInfoProtocol {
         return service.saveUser(user: user)
     }
     
-    func fetchUserTransactions(with email: String) -> Observable<[Transaction]> {
-        let service = UserDatabaseService.shared
-        return service.fetchUserTransactions(with: email)
-    }
-    
-    func updateTransactionForUser(email: String, transaction: Transaction) -> Observable<Void> {
+    var currentUser: Observable<User> {
+        guard let email = getUserEmail() else { return Observable.error(StandardError.notFoundInDatabase) }
         let service = UserDatabaseService.shared
         return service.fetchUserFromDBWith(email: email)
-            .flatMap { user -> Observable<Void> in
-                var updatedUser = user
-                updatedUser.transactions.append(transaction)
-                return service.saveUser(user: updatedUser)
-            }
     }
 
 }
+

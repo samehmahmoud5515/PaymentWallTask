@@ -13,6 +13,10 @@ struct WalletTransactionsViewModel {
     //tableView data sources
     let transactionsDatasource = BehaviorSubject<[CategorizedTransaction]>(value: [])
     
+    let reloadFetchingTransactions = PublishSubject<Void>()
+    
+    let userBalance = PublishSubject<String>()
+    
     let localization =  WalletTransactionsLocalization()
 }
 

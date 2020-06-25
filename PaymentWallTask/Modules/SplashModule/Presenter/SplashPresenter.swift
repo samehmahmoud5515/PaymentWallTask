@@ -37,11 +37,13 @@ class SplashPresenter: SplashPresenterProtocol {
     }
     
     private func handleIsThereLoggedUser() {
-        if interactor?.isThereLoggedUser ?? false {
-            navigateToHome()
-        } else {
-            navigateToLogin()
-        }
+        interactor?.currentUser
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                self?.navigateToHome()
+            }, onError: { [weak self] error in
+                self?.navigateToLogin()
+            }).disposed(by: disposeBag)
     }
 
     //MARK: - Navigation

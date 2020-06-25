@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import RxSwift
 
 class WalletHeaderView: UIView {
 
+    //MARK: - Outler
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var balanceLabel: UILabel!
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,5 +33,5 @@ class WalletHeaderView: UIView {
         contentView.frame = self.bounds
         addSubview(contentView)
     }
-    
 }
+

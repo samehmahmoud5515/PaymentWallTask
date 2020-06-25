@@ -12,6 +12,7 @@ import RxSwift
 
 //MARK: - Router
 enum PaymentRoute {
+    case back
 }
 
 protocol PaymentRouterProtocol: class {
@@ -30,7 +31,7 @@ protocol PaymentPresenterProtocol: class {
 
 
 //MARK: - Interactor
-protocol PaymentInteractorProtocol: class {
+protocol PaymentInteractorProtocol: UserInfoProtocol, TransactionProtocol {
 
     func genrateRandomString(of size: Int) -> String
 }
@@ -43,4 +44,5 @@ protocol PaymentViewControllerProtocol: class {
     var presenter: PaymentPresenterProtocol?  { get set }
     func displayPaymentSuccessedView()
     func removePaymentSuccessedView()
+    func displayAlertWith(title: String?, message: String)
 }
