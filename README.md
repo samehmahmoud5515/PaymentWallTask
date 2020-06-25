@@ -12,7 +12,7 @@ Keychain for storing the logged in account.
 
 RxRealm So when a when a record in database changed The application get the updates.
 
-I used branches and pull request in every feature.
+I used branches and pull requests in every feature.
 
 -------------------------------------------------------------------------------------------------------------------
 
