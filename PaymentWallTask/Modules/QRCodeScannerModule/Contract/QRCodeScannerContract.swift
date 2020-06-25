@@ -42,4 +42,6 @@ protocol QRCodeScannerInteractorProtocol: class {
 protocol QRCodeScannerViewControllerProtocol: class {
 
     var presenter: QRCodeScannerPresenterProtocol?  { get set }
+    func displayDefaultAlert(title: String?, message: String?, okTitle: String?, actionBlock: (() -> Void)?)
+    func startCaptureRunning()
 }

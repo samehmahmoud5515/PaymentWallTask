@@ -12,7 +12,8 @@ import RxSwift
 class QRCodeScannerInteractor: QRCodeScannerInteractorProtocol {
     
     func parseTransaction(from json: String) -> Transaction? {
-        return Transaction(JSONString: json)
+        let transaction = Transaction(JSONString: json)
+        return transaction?.currency == nil ? nil : transaction
     }
     
     func buildDescripitonMessageFrom(transaction: Transaction) -> String {

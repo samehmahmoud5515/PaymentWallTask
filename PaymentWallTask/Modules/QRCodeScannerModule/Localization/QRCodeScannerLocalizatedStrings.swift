@@ -29,4 +29,12 @@ struct QRCodeScannerLocalization {
     var scanningNotSupportedMessage: String {
         return "Your device does not support scanning a code from an item. Please use a device with a camera."
     }
+    
+    var parsingError: String {
+        return "Parsing Error"
+    }
+    
+    var wrongFormattedQRCode: String {
+        return "This QR Code is in wrong format. Try another one"
+    }
 }

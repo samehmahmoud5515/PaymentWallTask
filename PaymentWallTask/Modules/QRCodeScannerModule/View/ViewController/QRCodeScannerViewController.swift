@@ -138,8 +138,11 @@ extension QRCodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
 //MARK: Display
 extension QRCodeScannerViewController: QRCodeScannerViewControllerProtocol {
     
-    private func displayDefaultAlert(title: String?, message: String?, okTitle: String?, actionBlock: (() -> Void)? = nil) {
+    func displayDefaultAlert(title: String?, message: String?, okTitle: String?, actionBlock: (() -> Void)?) {
         showDefaultAlert(title: title, message: message, okTitle: okTitle, actionBlock: actionBlock)
     }
     
+    func startCaptureRunning() {
+        captureSession.startRunning()
+    }
 }
