@@ -55,7 +55,7 @@ class SignupPresenter: SignupPresenterProtocol {
     }
     
     private func handleSignUpDidTappedInCaseAgrementSwitchIsOn() {
-        let textsObs = Observable.combineLatest(viewModel.email, viewModel.password, viewModel.email, viewModel.lastName)
+        let textsObs = Observable.combineLatest(viewModel.email, viewModel.password, viewModel.firstName, viewModel.lastName)
         viewModel.signupDidTapped
             .withLatestFrom(viewModel.agrementAgreeSwitch)
             .filter { $0 }
