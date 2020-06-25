@@ -13,4 +13,37 @@ Keychain for storing the logged in account.
 RxRealm So when a when a record in database changed The application get the updates.
 
 
+-------------------------------------------------------------------------------------------------------------------
+
+QR Codes:
+
+Here's the link for the three different cucrrencies generated qr codes:
+
+https://drive.google.com/drive/folders/10flCQxoz4ZlK0Rq_TTdprX3G5_HmpSFF
+
+In Order To genrate a new one, go to any qr code on line generator for example:
+
+https://www.the-qrcode-generator.com
+
+And in Text section add it in JSON for for example:
+
+{
+"paymentAmount": 1000,
+"businessName": "Amazon Product 2",
+"currency": "GBP"
+}
+
+Note: Balance and Currency are radom for every new user.
+
+---------------------------------------------------------------------------------------------------------------------
+
+To Run To simulator or device:
+
+1- open terminal and change directory with cd then the path of project folder, for example cd desktop/PaymentWallTask 
+
+2- run "pod install" command 
+
+3- build and run.
+
+
 
