@@ -32,3 +32,5 @@ And in Text section add it in JSON for for example:
 "businessName": "Amazon Product 2",
 "currency": "GBP"
 }
+
+Note: Balance and Currency are radom for every new user.
