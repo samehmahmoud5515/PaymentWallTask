@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import RxCocoa
 
 struct SignupViewModel {
     
@@ -14,7 +15,7 @@ struct SignupViewModel {
     let password = PublishSubject<String>()
     let firstName = PublishSubject<String>()
     let lastName = PublishSubject<String>()
-    let agrementAgreeSwitch = PublishSubject<Bool>()
+    let agrementAgreeSwitch = BehaviorSubject<Bool>(value: true)
     
     //taps
     let loginDidTapped = PublishSubject<Void>()

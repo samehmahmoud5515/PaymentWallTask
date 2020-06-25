@@ -114,7 +114,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="ftk-4g-geM"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="username"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
                                         </textField>
                                     </subviews>
                                 </stackView>

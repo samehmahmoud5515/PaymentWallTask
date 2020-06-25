@@ -36,7 +36,7 @@ class ProfileRouter: ProfileRouterProtocol {
         switch route {
         case .login:
             let loginVc = LoginRouter.assembleModule()
-            viewController?.navigationController?.setViewControllers([loginVc], animated: false)
+            viewController?.navigationController?.navigationController?.setViewControllers([loginVc], animated: false)
         }
     }
 

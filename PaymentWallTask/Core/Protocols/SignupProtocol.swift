@@ -28,6 +28,8 @@ extension SignupProtocol {
                 if isExist {
                     return Observable.error(SignupProtocolError.emailExist)
                 }
+                let keyChainService = KeychainService()
+                keyChainService.storeLoggedInEmail(email: email)
                 return service.saveUser(user: user)
             }
     }

@@ -1098,15 +1098,15 @@
 		509822AD249D17E70020A5A5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				506D8E2324A4B9A700ABD63D /* SignupModule */,
-				5075F28324A3F8B700A9BE60 /* SplashModule */,
+				505A695E24A164930010BE4A /* HomeModule */,
+				505A693224A12FB10010BE4A /* Login Module */,
 				505D30CE24A256D1003D3B21 /* PaymentModule */,
 				505A69AC24A169A50010BE4A /* ProfileModule */,
 				505A699224A169170010BE4A /* QRCodeScannerModule */,
-				505A697824A167D20010BE4A /* WalletTransactionsModule */,
-				505A695E24A164930010BE4A /* HomeModule */,
-				505A693224A12FB10010BE4A /* Login Module */,
 				509822AE249D17F30020A5A5 /* Root Module */,
+				506D8E2324A4B9A700ABD63D /* SignupModule */,
+				5075F28324A3F8B700A9BE60 /* SplashModule */,
+				505A697824A167D20010BE4A /* WalletTransactionsModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
