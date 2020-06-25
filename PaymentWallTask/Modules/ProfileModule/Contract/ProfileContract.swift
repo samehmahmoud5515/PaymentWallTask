@@ -12,6 +12,7 @@ import RxSwift
 
 //MARK: - Router
 enum ProfileRoute {
+    case login
 }
 
 protocol ProfileRouterProtocol: class {
@@ -30,7 +31,7 @@ protocol ProfilePresenterProtocol: class {
 
 
 //MARK: - Interactor
-protocol ProfileInteractorProtocol: class {
+protocol ProfileInteractorProtocol: LoginProtocol, UserInfoProtocol {
 
     
 }

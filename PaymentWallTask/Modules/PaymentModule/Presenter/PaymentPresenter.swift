@@ -39,7 +39,9 @@ class PaymentPresenter {
     private func bindUserBalanceObservable() {
         interactor?.currentUser
             .map { "\($0.balance) \($0.currency?.rawValue ?? "")" }
-            .bind(to: viewModel.userBalance)
+            .subscribe(onNext: { [weak self] balance in
+                self?.viewModel.userBalance.onNext(balance)
+            })
             .disposed(by: disposeBag)
     }
     

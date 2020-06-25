@@ -67,6 +67,7 @@ extension WalletTransactionsViewController {
     
     private func addRefreshControlToTableView() {
         let refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .black
         tableView.refreshControl = refreshControl
     }
 }
@@ -139,5 +140,9 @@ extension WalletTransactionsViewController: WalletTransactionsViewControllerProt
     
     func removeEmptyTransactionsView() {
         tableView.backgroundView = nil
+    }
+    
+    func stopAnimatingRefreshControl() {
+        tableView.refreshControl?.endRefreshing()
     }
 }

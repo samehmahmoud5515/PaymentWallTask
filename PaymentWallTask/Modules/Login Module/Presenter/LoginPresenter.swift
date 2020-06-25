@@ -32,6 +32,7 @@ class LoginPresenter: LoginPresenterProtocol {
     //MARK:- Functions
     func attach() {
         handleLoginDidTapped()
+        handleSignupDidTapped()
     }
     
     private func handleLoginDidTapped() {
@@ -55,6 +56,14 @@ class LoginPresenter: LoginPresenterProtocol {
         let localization = viewModel.localization
         viewController?.displayAlertWith(title: localization.loginFailedTitle, message: localization.loginFailedMessage)
     }
+    
+    private func handleSignupDidTapped() {
+        viewModel.signupDidTapped
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                self?.navigateToSignup()
+            }).disposed(by: disposeBag)
+    }
 
 }
 
@@ -62,5 +71,9 @@ class LoginPresenter: LoginPresenterProtocol {
 extension LoginPresenter {
     private func navigateToHome() {
         router.go(to: .home)
+    }
+    
+    private func navigateToSignup() {
+        router.go(to: .signup)
     }
 }

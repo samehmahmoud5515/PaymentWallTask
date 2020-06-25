@@ -13,6 +13,7 @@ import RxSwift
 //MARK: - Router
 enum LoginRoute {
     case home
+    case signup
 }
 
 protocol LoginRouterProtocol: class {

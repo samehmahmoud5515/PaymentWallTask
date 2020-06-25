@@ -32,8 +32,12 @@ class ProfileRouter: ProfileRouterProtocol {
     
     
     //MARK: - Routing
-    func go(to route:ProfileRoute) {
-        
+    func go(to route: ProfileRoute) {
+        switch route {
+        case .login:
+            let loginVc = LoginRouter.assembleModule()
+            viewController?.navigationController?.navigationController?.setViewControllers([loginVc], animated: false)
+        }
     }
 
 }

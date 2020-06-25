@@ -11,7 +11,6 @@ import RxSwift
 
 protocol UserInfoProtocol {
     func getUserEmail() -> String?
-    func saveUser(user: User) -> Observable<Void>
     var currentUser: Observable<User> { get }
 }
 
@@ -20,11 +19,6 @@ extension UserInfoProtocol {
     func getUserEmail() -> String? {
         let keyChainService = KeychainService()
         return keyChainService.loggedInEmail
-    }
-    
-    func saveUser(user: User) -> Observable<Void> {
-        let service = UserDatabaseService.shared
-        return service.saveUser(user: user)
     }
     
     var currentUser: Observable<User> {

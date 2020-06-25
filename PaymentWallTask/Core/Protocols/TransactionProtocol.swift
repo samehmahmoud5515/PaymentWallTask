@@ -18,6 +18,12 @@ extension TransactionProtocol {
     func fetchUserTransactions(with email: String) -> Observable<[Transaction]> {
         let service = UserDatabaseService.shared
         return service.fetchUserTransactions(with: email)
+            .flatMap { transacions -> Observable<[Transaction]> in
+                let sortedTransactions = transacions.filter { $0.date != nil }
+                    .sorted(by: { $0.date! > $1.date! }).prefix(10)
+                
+                return Observable.just(Array(sortedTransactions))
+            }
     }
     
     func confirmTransactionForUser(email: String, transaction: Transaction) -> Observable<Void> {

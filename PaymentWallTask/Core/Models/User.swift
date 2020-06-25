@@ -11,7 +11,6 @@ import Foundation
 struct User {
     var email: String = ""
     var password: String = ""
-    var mobile: String = ""
     var firstName: String = ""
     var lastName: String = ""
     var balance: Double = 0.0
@@ -25,7 +24,6 @@ extension User {
         let user = UserEntity()
         user.email = email
         user.password = password
-        user.mobile = mobile
         user.firstName = firstName
         user.lastName = lastName
         user.balance = balance

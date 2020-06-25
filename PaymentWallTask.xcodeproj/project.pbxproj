@@ -73,6 +73,14 @@
 		505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310124A2E378003D3B21 /* KeyChainService.swift */; };
 		505D310524A2E5DF003D3B21 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310424A2E5DF003D3B21 /* Data+Extension.swift */; };
 		506D8E2024A4A66200ABD63D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E1F24A4A66200ABD63D /* Date.swift */; };
+		506D8E3324A4B9A700ABD63D /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2524A4B9A700ABD63D /* SignupViewModel.swift */; };
+		506D8E3424A4B9A700ABD63D /* SignupContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2724A4B9A700ABD63D /* SignupContract.swift */; };
+		506D8E3524A4B9A700ABD63D /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2924A4B9A700ABD63D /* SignupPresenter.swift */; };
+		506D8E3624A4B9A700ABD63D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2B24A4B9A700ABD63D /* SignupViewController.swift */; };
+		506D8E3724A4B9A700ABD63D /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 506D8E2C24A4B9A700ABD63D /* SignupViewController.xib */; };
+		506D8E3824A4B9A700ABD63D /* SignupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2E24A4B9A700ABD63D /* SignupInteractor.swift */; };
+		506D8E3924A4B9A700ABD63D /* SignupLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E3024A4B9A700ABD63D /* SignupLocalizatedStrings.swift */; };
+		506D8E3A24A4B9A700ABD63D /* SignupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E3224A4B9A700ABD63D /* SignupRouter.swift */; };
 		5075F28024A3E53800A9BE60 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */; };
 		5075F29324A3F8B800A9BE60 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F28524A3F8B700A9BE60 /* SplashViewModel.swift */; };
 		5075F29424A3F8B800A9BE60 /* SplashContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F28724A3F8B700A9BE60 /* SplashContract.swift */; };
@@ -91,6 +99,7 @@
 		509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822C3249D23130020A5A5 /* UIView+Constraints.swift */; };
 		509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509822C5249D25500020A5A5 /* LaunchScreen.storyboard */; };
 		50D14E3224A244EF009B648A /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D14E3124A244EF009B648A /* UIViewController+Alerts.swift */; };
+		50DC3F3A24A4EBA100359A6A /* SignupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DC3F3924A4EBA100359A6A /* SignupProtocol.swift */; };
 		50F7294824A204DF00C719B0 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7294624A204DF00C719B0 /* TransactionCell.swift */; };
 		50F7294924A204DF00C719B0 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F7294724A204DF00C719B0 /* TransactionCell.xib */; };
 		50F7294C24A20CC900C719B0 /* TransactionTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7294B24A20CC900C719B0 /* TransactionTableViewHeaderView.swift */; };
@@ -188,6 +197,14 @@
 		505D310124A2E378003D3B21 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		505D310424A2E5DF003D3B21 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		506D8E1F24A4A66200ABD63D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		506D8E2524A4B9A700ABD63D /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		506D8E2724A4B9A700ABD63D /* SignupContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupContract.swift; sourceTree = "<group>"; };
+		506D8E2924A4B9A700ABD63D /* SignupPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
+		506D8E2B24A4B9A700ABD63D /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		506D8E2C24A4B9A700ABD63D /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		506D8E2E24A4B9A700ABD63D /* SignupInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupInteractor.swift; sourceTree = "<group>"; };
+		506D8E3024A4B9A700ABD63D /* SignupLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLocalizatedStrings.swift; sourceTree = "<group>"; };
+		506D8E3224A4B9A700ABD63D /* SignupRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupRouter.swift; sourceTree = "<group>"; };
 		5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		5075F28524A3F8B700A9BE60 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		5075F28724A3F8B700A9BE60 /* SplashContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashContract.swift; sourceTree = "<group>"; };
@@ -212,6 +229,7 @@
 		509822C3249D23130020A5A5 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		509822C6249D25500020A5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50D14E3124A244EF009B648A /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		50DC3F3924A4EBA100359A6A /* SignupProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupProtocol.swift; sourceTree = "<group>"; };
 		50F7294624A204DF00C719B0 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		50F7294724A204DF00C719B0 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		50F7294B24A20CC900C719B0 /* TransactionTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewHeaderView.swift; sourceTree = "<group>"; };
@@ -823,6 +841,7 @@
 				505D30F824A2DA47003D3B21 /* UserInfoProtocol.swift */,
 				5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */,
 				5087575D24A468DE00222C22 /* TransactionProtocol.swift */,
+				50DC3F3924A4EBA100359A6A /* SignupProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -857,6 +876,77 @@
 				506D8E1F24A4A66200ABD63D /* Date.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		506D8E2324A4B9A700ABD63D /* SignupModule */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E2624A4B9A700ABD63D /* Contract */,
+				506D8E2D24A4B9A700ABD63D /* Interactor */,
+				506D8E2F24A4B9A700ABD63D /* Localization */,
+				506D8E2824A4B9A700ABD63D /* Presenter */,
+				506D8E3124A4B9A700ABD63D /* Router */,
+				506D8E2A24A4B9A700ABD63D /* ViewController */,
+				506D8E2424A4B9A700ABD63D /* ViewModel */,
+			);
+			path = SignupModule;
+			sourceTree = "<group>";
+		};
+		506D8E2424A4B9A700ABD63D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E2524A4B9A700ABD63D /* SignupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		506D8E2624A4B9A700ABD63D /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E2724A4B9A700ABD63D /* SignupContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		506D8E2824A4B9A700ABD63D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E2924A4B9A700ABD63D /* SignupPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		506D8E2A24A4B9A700ABD63D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E2B24A4B9A700ABD63D /* SignupViewController.swift */,
+				506D8E2C24A4B9A700ABD63D /* SignupViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		506D8E2D24A4B9A700ABD63D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E2E24A4B9A700ABD63D /* SignupInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		506D8E2F24A4B9A700ABD63D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E3024A4B9A700ABD63D /* SignupLocalizatedStrings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		506D8E3124A4B9A700ABD63D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				506D8E3224A4B9A700ABD63D /* SignupRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		5075F28324A3F8B700A9BE60 /* SplashModule */ = {
@@ -1008,14 +1098,15 @@
 		509822AD249D17E70020A5A5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				5075F28324A3F8B700A9BE60 /* SplashModule */,
+				505A695E24A164930010BE4A /* HomeModule */,
+				505A693224A12FB10010BE4A /* Login Module */,
 				505D30CE24A256D1003D3B21 /* PaymentModule */,
 				505A69AC24A169A50010BE4A /* ProfileModule */,
 				505A699224A169170010BE4A /* QRCodeScannerModule */,
-				505A697824A167D20010BE4A /* WalletTransactionsModule */,
-				505A695E24A164930010BE4A /* HomeModule */,
-				505A693224A12FB10010BE4A /* Login Module */,
 				509822AE249D17F30020A5A5 /* Root Module */,
+				506D8E2324A4B9A700ABD63D /* SignupModule */,
+				5075F28324A3F8B700A9BE60 /* SplashModule */,
+				505A697824A167D20010BE4A /* WalletTransactionsModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1247,6 +1338,7 @@
 				505D30E124A256D1003D3B21 /* PaymentViewController.xib in Resources */,
 				50F7294924A204DF00C719B0 /* TransactionCell.xib in Resources */,
 				509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */,
+				506D8E3724A4B9A700ABD63D /* SignupViewController.xib in Resources */,
 				5075F29724A3F8B800A9BE60 /* SplashViewController.xib in Resources */,
 				509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */,
 				505A69A524A169170010BE4A /* QRCodeScannerViewController.xib in Resources */,
@@ -1394,6 +1486,7 @@
 				505A698824A167D20010BE4A /* WalletTransactionsViewModel.swift in Sources */,
 				505A697424A164930010BE4A /* HomeLocalizatedStrings.swift in Sources */,
 				505A69A224A169170010BE4A /* QRCodeScannerViewModel.swift in Sources */,
+				506D8E3924A4B9A700ABD63D /* SignupLocalizatedStrings.swift in Sources */,
 				505A697324A164930010BE4A /* HomeInteractor.swift in Sources */,
 				505D30F924A2DA47003D3B21 /* UserInfoProtocol.swift in Sources */,
 				505D30F224A2CBE2003D3B21 /* Transaction.swift in Sources */,
@@ -1413,7 +1506,9 @@
 				506D8E2024A4A66200ABD63D /* Date.swift in Sources */,
 				505D30E524A256D1003D3B21 /* PaymentRouter.swift in Sources */,
 				505A698A24A167D20010BE4A /* WalletTransactionsPresenter.swift in Sources */,
+				506D8E3524A4B9A700ABD63D /* SignupPresenter.swift in Sources */,
 				505A69A924A169170010BE4A /* QRCodeScannerRouter.swift in Sources */,
+				506D8E3624A4B9A700ABD63D /* SignupViewController.swift in Sources */,
 				5075F29424A3F8B800A9BE60 /* SplashContract.swift in Sources */,
 				505A69BC24A169A50010BE4A /* ProfileViewModel.swift in Sources */,
 				505A697524A164930010BE4A /* HomeRouter.swift in Sources */,
@@ -1422,6 +1517,7 @@
 				5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */,
 				5075F29A24A3F8B800A9BE60 /* SplashRouter.swift in Sources */,
 				5075F29624A3F8B800A9BE60 /* SplashViewController.swift in Sources */,
+				50DC3F3A24A4EBA100359A6A /* SignupProtocol.swift in Sources */,
 				505D30DE24A256D1003D3B21 /* PaymentViewModel.swift in Sources */,
 				50F7294C24A20CC900C719B0 /* TransactionTableViewHeaderView.swift in Sources */,
 				505A694C24A13BA30010BE4A /* UIView+IBInspectable.swift in Sources */,
@@ -1437,11 +1533,14 @@
 				50F7295324A224A900C719B0 /* WalletHeaderView.swift in Sources */,
 				505A69C324A169A50010BE4A /* ProfileRouter.swift in Sources */,
 				505D30EA24A2A919003D3B21 /* PaymentSuccessedView.swift in Sources */,
+				506D8E3324A4B9A700ABD63D /* SignupViewModel.swift in Sources */,
 				505A697224A164930010BE4A /* HomeViewController.swift in Sources */,
 				505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */,
 				505D30E024A256D1003D3B21 /* PaymentPresenter.swift in Sources */,
 				505A694824A12FB10010BE4A /* LoginLocalizatedStrings.swift in Sources */,
+				506D8E3A24A4B9A700ABD63D /* SignupRouter.swift in Sources */,
 				505A694924A12FB10010BE4A /* LoginRouter.swift in Sources */,
+				506D8E3824A4B9A700ABD63D /* SignupInteractor.swift in Sources */,
 				505D30E224A256D1003D3B21 /* PaymentViewController.swift in Sources */,
 				505A69C124A169A50010BE4A /* ProfileInteractor.swift in Sources */,
 				505A69A324A169170010BE4A /* QRCodeScannerContract.swift in Sources */,
@@ -1451,6 +1550,7 @@
 				505A694724A12FB10010BE4A /* LoginInteractor.swift in Sources */,
 				505A698924A167D20010BE4A /* WalletTransactionsContract.swift in Sources */,
 				50F7294824A204DF00C719B0 /* TransactionCell.swift in Sources */,
+				506D8E3424A4B9A700ABD63D /* SignupContract.swift in Sources */,
 				505A69C524A17DD80010BE4A /* HomeImages.swift in Sources */,
 				505A69A824A169170010BE4A /* QRCodeScannerLocalizatedStrings.swift in Sources */,
 				505A69A424A169170010BE4A /* QRCodeScannerPresenter.swift in Sources */,

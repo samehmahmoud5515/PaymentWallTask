@@ -23,6 +23,10 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="88y-yj-X7b">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xg9-uE-Id3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.55000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyP-Gu-a0R" customClass="WalletHeaderView" customModule="PaymentWallTask" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,13 +47,17 @@
                 <constraint firstItem="88y-yj-X7b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="30H-ei-gEk"/>
                 <constraint firstAttribute="bottom" secondItem="88y-yj-X7b" secondAttribute="bottom" id="7sX-lh-sFT"/>
                 <constraint firstItem="DK0-yE-3jr" firstAttribute="top" secondItem="qyP-Gu-a0R" secondAttribute="bottom" id="EVp-D1-6XT"/>
+                <constraint firstItem="xg9-uE-Id3" firstAttribute="bottom" secondItem="88y-yj-X7b" secondAttribute="bottom" id="J4e-0R-kdI"/>
+                <constraint firstItem="xg9-uE-Id3" firstAttribute="top" secondItem="88y-yj-X7b" secondAttribute="top" id="QRH-A1-rPz"/>
                 <constraint firstItem="6Kc-dT-Xgn" firstAttribute="trailing" secondItem="DK0-yE-3jr" secondAttribute="trailing" id="XcA-K6-bNV"/>
                 <constraint firstItem="DK0-yE-3jr" firstAttribute="leading" secondItem="6Kc-dT-Xgn" secondAttribute="leading" id="fOQ-i8-nv8"/>
+                <constraint firstItem="xg9-uE-Id3" firstAttribute="leading" secondItem="88y-yj-X7b" secondAttribute="leading" id="lhL-84-q7c"/>
                 <constraint firstItem="88y-yj-X7b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oJb-LM-AK8"/>
                 <constraint firstItem="6Kc-dT-Xgn" firstAttribute="trailing" secondItem="qyP-Gu-a0R" secondAttribute="trailing" id="qaa-Vm-4Bd"/>
                 <constraint firstItem="qyP-Gu-a0R" firstAttribute="top" secondItem="6Kc-dT-Xgn" secondAttribute="top" id="qjf-eL-Fth"/>
                 <constraint firstItem="6Kc-dT-Xgn" firstAttribute="bottom" secondItem="DK0-yE-3jr" secondAttribute="bottom" id="rqd-kd-8ND"/>
                 <constraint firstItem="qyP-Gu-a0R" firstAttribute="leading" secondItem="6Kc-dT-Xgn" secondAttribute="leading" id="s6H-tv-i3E"/>
+                <constraint firstItem="xg9-uE-Id3" firstAttribute="trailing" secondItem="88y-yj-X7b" secondAttribute="trailing" id="yhu-GU-pgx"/>
                 <constraint firstAttribute="trailing" secondItem="88y-yj-X7b" secondAttribute="trailing" id="zwC-Oj-LrO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="6Kc-dT-Xgn"/>

@@ -27,14 +27,28 @@ class ProfilePresenter: ProfilePresenterProtocol {
         self.router = router
     }
     
-    
-    
-    //MARK:- Functions
+
     func attach() {
-        
-       
+        handleLogoutDidTapped()
+        fetchCurrentUser()
     }
     
-    //MARK:- Private functions
+    private func handleLogoutDidTapped() {
+        viewModel.logoutButtonDidTap.subscribe(onNext: { [weak self] _ in
+            self?.interactor?.logout()
+            self?.navigateLogin()
+        }).disposed(by: disposeBag)
+    }
+    
+    private func fetchCurrentUser() {
+        interactor?.currentUser.subscribe(onNext: { [weak self] user in
+            self?.viewModel.user.onNext(user)
+        }).disposed(by: disposeBag)
+    }
+}
 
+extension ProfilePresenter {
+    private func navigateLogin() {
+        router.go(to: .login)
+    }
 }
