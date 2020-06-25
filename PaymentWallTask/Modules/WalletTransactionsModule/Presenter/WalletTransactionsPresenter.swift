@@ -34,6 +34,7 @@ class WalletTransactionsPresenter: WalletTransactionsPresenterProtocol {
         fetchUserTransactions()
         bindUserBalanceObservable()
         handleEmptyTransaction()
+        handleReloadFetchingTransactions()
     }
     
     private func fetchUserTransactions() {
@@ -43,6 +44,7 @@ class WalletTransactionsPresenter: WalletTransactionsPresenterProtocol {
                 let categorizedTransaction = self?.interactor?.cateogrizeTransactionWithDate(transactions: transactions) ?? []
                 self?.viewModel.transactionsDatasource.onNext(categorizedTransaction)
                 self?.viewController?.removeEmptyTransactionsView()
+                self?.viewController?.stopAnimatingRefreshControl()
         }).disposed(by: disposeBag)
     }
     
@@ -62,6 +64,7 @@ class WalletTransactionsPresenter: WalletTransactionsPresenterProtocol {
             }.subscribe(onNext: { [weak self] transactions in
                 let categorizedTransaction = self?.interactor?.cateogrizeTransactionWithDate(transactions: transactions) ?? []
                 self?.viewModel.transactionsDatasource.onNext(categorizedTransaction)
+                self?.viewController?.stopAnimatingRefreshControl()
             }).disposed(by: disposeBag)
     }
     

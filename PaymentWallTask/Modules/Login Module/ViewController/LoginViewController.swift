@@ -54,6 +54,7 @@ extension LoginViewController {
         bindScrollViewContentOffSetWithKeybaordVisiable()
         bindbindScrollViewContentOffSetWithKeybaordHidden()
         bindLoginDidTappedWithLoginButtonTap()
+        bindSignupDidTappedWithSignupButtonTap()
         handleEmailTextFieldDidEndEditing()
         handlePasswordTextFieldDidEndEditing()
         handlePasswordTextFieldDidEndEditing()
@@ -83,6 +84,13 @@ extension LoginViewController {
         guard let viewModel = presenter?.viewModel else { return }
         loginButton.rx.tap
             .bind(to: viewModel.loginDidTapped)
+            .disposed(by: disposeBag)
+    }
+    
+    private func bindSignupDidTappedWithSignupButtonTap() {
+        guard let viewModel = presenter?.viewModel else { return }
+        signupButton.rx.tap
+            .bind(to: viewModel.signupDidTapped)
             .disposed(by: disposeBag)
     }
     
@@ -117,6 +125,7 @@ extension LoginViewController {
     }
 }
 
+//MARK: - Display
 extension LoginViewController: LoginViewControllerProtocol {
     func displayAlertWith(title: String?, message: String?) {
         showDefaultAlert(title: title, message: message, okTitle: presenter?.viewModel.localization.ok)

@@ -42,4 +42,5 @@ protocol WalletTransactionsViewControllerProtocol: class {
     var presenter: WalletTransactionsPresenterProtocol?  { get set }
     func removeEmptyTransactionsView()
     func displayEmptyTransactionsView()
+    func stopAnimatingRefreshControl()
 }

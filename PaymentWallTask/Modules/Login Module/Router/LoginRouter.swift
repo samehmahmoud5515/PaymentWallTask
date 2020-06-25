@@ -37,6 +37,9 @@ class LoginRouter: LoginRouterProtocol {
         case .home:
             let homeViewController = HomeRouter.assembleModule()
             viewController?.navigationController?.setViewControllers([homeViewController], animated: false)
+        case .signup:
+            let signupVc = SignupRouter.assembleModule()
+            viewController?.navigationController?.pushViewController(signupVc, animated: true)
         }
     }
 

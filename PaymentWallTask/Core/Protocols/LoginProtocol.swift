@@ -10,6 +10,7 @@ import RxSwift
 
 protocol LoginProtocol {
     func login(email: String, password: String) -> Observable<Bool>
+    func logout()
 }
 
 extension LoginProtocol {
@@ -29,6 +30,11 @@ extension LoginProtocol {
                 }
                 return Observable.just(false)
             }
+    }
+    
+    func logout() {
+        let keychainService = KeychainService()
+        keychainService.clear()
     }
 }
 
