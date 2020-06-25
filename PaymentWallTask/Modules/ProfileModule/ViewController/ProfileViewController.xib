@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="PaymentWallTask" customModuleProvider="target">
             <connections>
                 <outlet property="birthDateLabel" destination="dUt-WY-2BE" id="JMJ-Sy-8L5"/>
+                <outlet property="birthDateSpearatorView" destination="gdq-nD-mrY" id="0UN-GL-PRl"/>
+                <outlet property="birthDateStackView" destination="Err-JR-Uae" id="xKd-fH-kZu"/>
                 <outlet property="emailLabel" destination="tse-zM-pY6" id="s62-do-QLL"/>
                 <outlet property="firstNameLabel" destination="dfw-fk-vUs" id="hIN-Ls-fR2"/>
                 <outlet property="lastNameLabel" destination="aGa-EF-sKm" id="kw1-3y-scd"/>
@@ -133,6 +135,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="r0j-x1-Hr4"/>
                                     </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <state key="normal" title="Logout">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>

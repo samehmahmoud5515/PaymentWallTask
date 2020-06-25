@@ -13,7 +13,7 @@ struct User {
     var password: String = ""
     var firstName: String = ""
     var lastName: String = ""
-    var birthDate: String = ""
+    var birthDate: Date?
     var balance: Double = 0.0
     var currency: Currency?
     var transactions: [Transaction] = []

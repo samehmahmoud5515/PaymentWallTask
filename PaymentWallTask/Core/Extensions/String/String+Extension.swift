@@ -1,5 +1,5 @@
 //
-//  Date.swift
+//  String+Extension.swift
 //  PaymentWallTask
 //
 //  Created by SAMEH on 6/25/20.
@@ -8,14 +8,12 @@
 
 import Foundation
 
-extension Date {
-    func toForamt(format: String = Date.displayFormat) -> String {
+extension String {
+    func toDate(format: String = Date.displayFormat) -> Date? {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale.current
         dateFormatter.timeZone = TimeZone.current
+        dateFormatter.locale = Locale.current
         dateFormatter.dateFormat = format
-        return dateFormatter.string(from: self)
+        return dateFormatter.date(from: self)
     }
-    
-    static let displayFormat = "dd.MM.yyyy"
 }

@@ -25,7 +25,7 @@ class WalletTransactionsInteractor: WalletTransactionsInteractorProtocol {
     }
     
     private func convertDateToString(date: Date) -> String {
-        return date.toForamt(format: Date.transactionDisplayFormat)
+        return date.toForamt()
     }
     
 }
