@@ -21,7 +21,7 @@ here's the link for the three different cucrrencies generated qr codes
 
 https://drive.google.com/drive/folders/10flCQxoz4ZlK0Rq_TTdprX3G5_HmpSFF
 
-In Order To genrate a new on go to any qr code on line generator for example:
+In Order To genrate a new one, go to any qr code on line generator for example:
 
 https://www.the-qrcode-generator.com
 
