@@ -55,18 +55,18 @@ class SignupPresenter: SignupPresenterProtocol {
     }
     
     private func handleSignUpDidTappedInCaseAgrementSwitchIsOn() {
-        let textsObs = Observable.combineLatest(viewModel.email, viewModel.password, viewModel.firstName, viewModel.lastName)
+        let textsObs = Observable.combineLatest(viewModel.email, viewModel.password, viewModel.firstName, viewModel.lastName, viewModel.birthDate)
         viewModel.signupDidTapped
             .withLatestFrom(viewModel.agrementAgreeSwitch)
             .filter { $0 }
             .withLatestFrom(textsObs)
-            .subscribe(onNext: { [weak self] email, password, fName, lName in
-                self?.signup(email: email, password: password, fName: fName, lName: lName)
+            .subscribe(onNext: { [weak self] email, password, fName, lName, bdate in
+                self?.signup(email: email, password: password, fName: fName, lName: lName, birthDate: bdate)
             }).disposed(by: disposeBag)
     }
     
-    private func signup(email: String, password: String, fName: String, lName: String) {
-        interactor?.signup(email: email, password: password, firstName: fName, lastName: lName)
+    private func signup(email: String, password: String, fName: String, lName: String, birthDate: String) {
+        interactor?.signup(email: email, password: password, firstName: fName, lastName: lName, birthDate: birthDate)
             .subscribe(onNext: { [weak self] () in
                 self?.navigateToHome()
             }, onError: { [weak self] error in

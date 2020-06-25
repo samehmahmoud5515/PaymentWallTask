@@ -12,6 +12,7 @@ extension Date {
     func toForamt(format: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale.current
+        dateFormatter.timeZone = TimeZone.current
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }

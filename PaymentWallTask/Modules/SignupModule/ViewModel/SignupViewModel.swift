@@ -15,6 +15,7 @@ struct SignupViewModel {
     let password = PublishSubject<String>()
     let firstName = PublishSubject<String>()
     let lastName = PublishSubject<String>()
+    let birthDate = PublishSubject<String>()
     let agrementAgreeSwitch = BehaviorSubject<Bool>(value: true)
     
     //taps

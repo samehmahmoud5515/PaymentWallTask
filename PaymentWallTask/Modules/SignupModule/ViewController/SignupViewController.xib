@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController" customModule="PaymentWallTask" customModuleProvider="target">
             <connections>
                 <outlet property="agrementAgreeSwitch" destination="wO9-ks-mi9" id="d17-fc-1yk"/>
+                <outlet property="birthDateTextField" destination="7ha-TN-7WU" id="rHu-SQ-TUs"/>
                 <outlet property="emailTextField" destination="qeY-kC-fid" id="g0v-XD-h2M"/>
                 <outlet property="firstNameTextField" destination="dgd-5S-zJO" id="dhi-Mo-roB"/>
                 <outlet property="lastNameNameTextField" destination="HoZ-B2-cdb" id="AL7-TW-c9H"/>
@@ -38,7 +39,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsa-Z2-R4o">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="761.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="831.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_passport_logo" translatesAutoresizingMaskIntoConstraints="NO" id="oUX-5N-4rp">
                                     <rect key="frame" x="105.5" y="28" width="164" height="25"/>
@@ -96,7 +97,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-1C-W2e">
-                                    <rect key="frame" x="50.5" y="387.5" width="274" height="120"/>
+                                    <rect key="frame" x="50.5" y="387.5" width="274" height="190"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Legal First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgd-5S-zJO">
                                             <rect key="frame" x="0.0" y="0.0" width="274" height="50"/>
@@ -114,12 +115,21 @@
                                                 <constraint firstAttribute="height" constant="50" id="ftk-4g-geM"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="username"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birth date (dd/mm/yyyy)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ha-TN-7WU">
+                                            <rect key="frame" x="0.0" y="140" width="274" height="50"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="UFG-Qu-aQF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                         </textField>
                                     </subviews>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTP-T7-dcG">
-                                    <rect key="frame" x="50.5" y="517.5" width="274" height="59"/>
+                                    <rect key="frame" x="50.5" y="587.5" width="274" height="59"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2El-xe-Ip3">
                                             <rect key="frame" x="0.0" y="0.0" width="274" height="59"/>
@@ -195,7 +205,7 @@ I allow FasterPay  to use my Passport.io data.</string>
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VUm-PH-AAa">
-                                    <rect key="frame" x="50.5" y="596.5" width="274" height="115"/>
+                                    <rect key="frame" x="50.5" y="666.5" width="274" height="115"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXL-EO-Hkn">
                                             <rect key="frame" x="0.0" y="0.0" width="274" height="50"/>

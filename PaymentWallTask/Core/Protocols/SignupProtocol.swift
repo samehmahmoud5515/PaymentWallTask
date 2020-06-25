@@ -9,18 +9,18 @@
 import RxSwift
 
 protocol SignupProtocol {
-    func signup(email: String, password: String, firstName: String, lastName: String) -> Observable<Void>
+    func signup(email: String, password: String, firstName: String, lastName: String, birthDate: String) -> Observable<Void>
     
 }
 
 extension SignupProtocol {
     
-    func signup(email: String, password: String, firstName: String, lastName: String) -> Observable<Void> {
+    func signup(email: String, password: String, firstName: String, lastName: String, birthDate: String) -> Observable<Void> {
         //choose random balance and currency
         let balance = Int.random(in: 0 ..< 10000)
         let currency = [Currency.USD, Currency.EUR, Currency.GBP].randomElement()
         
-        let user = User(email: email, password: password, firstName: firstName, lastName: lastName, balance: Double(balance), currency: currency, transactions: [])
+        let user = User(email: email, password: password, firstName: firstName, lastName: lastName, birthDate: birthDate, balance: Double(balance), currency: currency, transactions: [])
         
         let service = UserDatabaseService.shared
         return service.isEmailExist(email: email)

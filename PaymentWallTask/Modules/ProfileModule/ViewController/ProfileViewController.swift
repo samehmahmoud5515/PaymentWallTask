@@ -17,6 +17,7 @@ class ProfileViewController: UIViewController, ProfileViewControllerProtocol {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var birthDateLabel: UILabel!
     
     
     //MARK: - Attributes
@@ -64,5 +65,6 @@ extension ProfileViewController {
         emailLabel.text = user.email
         firstNameLabel.text = user.firstName
         lastNameLabel.text = user.lastName
+        birthDateLabel.text = user.birthDate
     }
 }
