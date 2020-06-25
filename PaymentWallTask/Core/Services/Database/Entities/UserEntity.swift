@@ -14,6 +14,7 @@ class UserEntity: Object {
     @objc dynamic var password: String = ""
     @objc dynamic var firstName: String = ""
     @objc dynamic var lastName: String = ""
+    @objc dynamic var birthDate: String = ""
     @objc dynamic var balance: Double = 0.0
     @objc dynamic var currency: String = ""
     var transactions = List<TransactionEntity>()
@@ -34,6 +35,7 @@ extension UserEntity {
         user.currency = Currency(rawValue: currency)
         user.firstName = firstName
         user.lastName = lastName
+        user.birthDate = birthDate
         user.transactions = transactions.map { $0.toTransaction }
         return user
     }

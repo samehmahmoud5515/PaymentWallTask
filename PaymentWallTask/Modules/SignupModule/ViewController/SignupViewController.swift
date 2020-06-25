@@ -19,6 +19,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameNameTextField: UITextField!
+    @IBOutlet weak var birthDateTextField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var agrementAgreeSwitch: UISwitch!
@@ -43,6 +44,11 @@ extension SignupViewController {
     
     private func setupUI() {
         hideKeyboardWhenTappedAround()
+        setupBirthDateTextFieldDelegate()
+    }
+    
+    private func setupBirthDateTextFieldDelegate() {
+        birthDateTextField.delegate = self
     }
 }
 
@@ -58,6 +64,7 @@ extension SignupViewController {
         bindPasswordTextSubjectWithEmailTextField()
         bindFirstNameTextSubjectWithEmailTextField()
         bindLastNameTextSubjectWithEmailTextField()
+        bindBirthDateTextSubjectWithBirthdataTextField()
         bindAgrementAgreeSwitchSubjectWithAgrementAgreeSwitch()
     }
     
@@ -121,6 +128,13 @@ extension SignupViewController {
             .disposed(by: disposeBag)
     }
     
+    private func bindBirthDateTextSubjectWithBirthdataTextField() {
+        guard let viewModel = presenter?.viewModel else { return }
+        birthDateTextField.rx.text.compactMap { $0 }
+            .bind(to: viewModel.birthDate)
+            .disposed(by: disposeBag)
+    }
+    
     private func bindAgrementAgreeSwitchSubjectWithAgrementAgreeSwitch() {
         guard let viewModel = presenter?.viewModel else { return }
         agrementAgreeSwitch.rx.value
@@ -164,7 +178,7 @@ extension SignupViewController {
     private func handleLastNameTextFieldDidEndEditing() {
         lastNameNameTextField.rx.controlEvent(.editingDidEndOnExit)
             .subscribe(onNext: { [weak self] _ in
-                self?.dismissKeyboard()
+                self?.birthDateTextField.becomeFirstResponder()
             }).disposed(by: disposeBag)
     }
 }
@@ -173,5 +187,23 @@ extension SignupViewController {
 extension SignupViewController: SignupViewControllerProtocol {
     func displayAlertWith(title: String?, message: String?) {
         showDefaultAlert(title: title, message: message, okTitle: presenter?.viewModel.localization.ok)
+    }
+}
+
+//MARK: - UITextFieldDelegate
+extension SignupViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField == birthDateTextField {
+            if birthDateTextField.text?.count == 2 || birthDateTextField.text?.count == 5 {
+                if !(string == "") {
+                    birthDateTextField.text = birthDateTextField.text! + "."
+                }
+            }
+            // check the condition not exceeds 9 chars
+            return !(birthDateTextField.text!.count > 9 && (string.count ) > range.length)
+        } else {
+            return true
+        }
     }
 }

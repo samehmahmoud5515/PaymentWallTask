@@ -13,6 +13,7 @@ struct User {
     var password: String = ""
     var firstName: String = ""
     var lastName: String = ""
+    var birthDate: String = ""
     var balance: Double = 0.0
     var currency: Currency?
     var transactions: [Transaction] = []
@@ -26,6 +27,7 @@ extension User {
         user.password = password
         user.firstName = firstName
         user.lastName = lastName
+        user.birthDate = birthDate
         user.balance = balance
         user.currency = currency?.rawValue ?? ""
         user.transactions.append(objectsIn: transactions.map { $0.toTransactionEntity })
