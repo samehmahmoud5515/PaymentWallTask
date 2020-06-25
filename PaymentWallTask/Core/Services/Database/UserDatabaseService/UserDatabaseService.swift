@@ -21,7 +21,7 @@ class UserDatabaseService {
             
             let config = Realm.Configuration (
                 fileURL: defaultUrl.deletingLastPathComponent().appendingPathComponent("User.realm")
-                , schemaVersion: 4
+                , schemaVersion: 5
                 , deleteRealmIfMigrationNeeded: true
                 , objectTypes: [UserEntity.self, TransactionEntity.self]
             )

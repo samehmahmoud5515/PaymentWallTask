@@ -18,6 +18,8 @@ class ProfileViewController: UIViewController, ProfileViewControllerProtocol {
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var birthDateLabel: UILabel!
+    @IBOutlet weak var birthDateStackView: UIStackView!
+    @IBOutlet weak var birthDateSpearatorView: UIView!
     
     
     //MARK: - Attributes
@@ -65,6 +67,9 @@ extension ProfileViewController {
         emailLabel.text = user.email
         firstNameLabel.text = user.firstName
         lastNameLabel.text = user.lastName
-        birthDateLabel.text = user.birthDate
+        let birthDate = user.birthDate?.toForamt()
+        birthDateLabel.text = birthDate
+        birthDateStackView.isHidden = birthDate == nil
+        birthDateSpearatorView.isHidden = birthDate == nil
     }
 }

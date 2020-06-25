@@ -98,6 +98,7 @@
 		509822B9249D1A880020A5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50982282249D154F0020A5A5 /* Assets.xcassets */; };
 		509822C4249D23130020A5A5 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822C3249D23130020A5A5 /* UIView+Constraints.swift */; };
 		509822C7249D25500020A5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509822C5249D25500020A5A5 /* LaunchScreen.storyboard */; };
+		50B19A7824A5473E002107F3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B19A7724A5473E002107F3 /* String+Extension.swift */; };
 		50D14E3224A244EF009B648A /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D14E3124A244EF009B648A /* UIViewController+Alerts.swift */; };
 		50DC3F3A24A4EBA100359A6A /* SignupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DC3F3924A4EBA100359A6A /* SignupProtocol.swift */; };
 		50F7294824A204DF00C719B0 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7294624A204DF00C719B0 /* TransactionCell.swift */; };
@@ -228,6 +229,7 @@
 		509822B4249D18830020A5A5 /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
 		509822C3249D23130020A5A5 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		509822C6249D25500020A5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50B19A7724A5473E002107F3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		50D14E3124A244EF009B648A /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		50DC3F3924A4EBA100359A6A /* SignupProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupProtocol.swift; sourceTree = "<group>"; };
 		50F7294624A204DF00C719B0 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
@@ -1160,6 +1162,7 @@
 		509822C1249D22F60020A5A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				50B19A7624A54728002107F3 /* String */,
 				506D8E1E24A4A65400ABD63D /* Date */,
 				505D310324A2E5CF003D3B21 /* Data */,
 				505A69C824A182CF0010BE4A /* UIColor */,
@@ -1176,6 +1179,14 @@
 				509822C3249D23130020A5A5 /* UIView+Constraints.swift */,
 			);
 			path = "UIView+Constraint";
+			sourceTree = "<group>";
+		};
+		50B19A7624A54728002107F3 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				50B19A7724A5473E002107F3 /* String+Extension.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 		50D14E3324A25149009B648A /* View */ = {
@@ -1535,6 +1546,7 @@
 				505D30EA24A2A919003D3B21 /* PaymentSuccessedView.swift in Sources */,
 				506D8E3324A4B9A700ABD63D /* SignupViewModel.swift in Sources */,
 				505A697224A164930010BE4A /* HomeViewController.swift in Sources */,
+				50B19A7824A5473E002107F3 /* String+Extension.swift in Sources */,
 				505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */,
 				505D30E024A256D1003D3B21 /* PaymentPresenter.swift in Sources */,
 				505A694824A12FB10010BE4A /* LoginLocalizatedStrings.swift in Sources */,

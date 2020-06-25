@@ -19,8 +19,7 @@ extension SignupProtocol {
         //choose random balance and currency
         let balance = Int.random(in: 0 ..< 10000)
         let currency = [Currency.USD, Currency.EUR, Currency.GBP].randomElement()
-        
-        let user = User(email: email, password: password, firstName: firstName, lastName: lastName, birthDate: birthDate, balance: Double(balance), currency: currency, transactions: [])
+        let user = User(email: email, password: password, firstName: firstName, lastName: lastName, birthDate: birthDate.toDate(), balance: Double(balance), currency: currency, transactions: [])
         
         let service = UserDatabaseService.shared
         return service.isEmailExist(email: email)
