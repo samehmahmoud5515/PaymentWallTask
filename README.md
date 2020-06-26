@@ -36,7 +36,7 @@ And in Text section add it in JSON for for example:
 "currency": "GBP"
 }
 
-Note: Balance and Currency are radom for every new user.
+Note: Balance and Currency are random for every new user.
 
 ---------------------------------------------------------------------------------------------------------------------
 
