@@ -16,7 +16,7 @@ class SignupPresenter: SignupPresenterProtocol {
     var interactor: SignupInteractorProtocol?
     private let router: SignupRouterProtocol
     private let disposeBag = DisposeBag()
-    let viewModel =  SignupViewModel()
+    var viewModel =  SignupViewModel()
 
     
     
@@ -34,6 +34,8 @@ class SignupPresenter: SignupPresenterProtocol {
         handleLoginDidTapped()
         handleSignUpDidTappedInCaseAgrementSwitchIsOff()
         handleSignUpDidTappedInCaseAgrementSwitchIsOn()
+        bindEntriesWithValidation()
+        observeOnWrongEntries()
     }
     
     private func handleLoginDidTapped() {
@@ -58,6 +60,10 @@ class SignupPresenter: SignupPresenterProtocol {
         let textsObs = Observable.combineLatest(viewModel.email, viewModel.password, viewModel.firstName, viewModel.lastName, viewModel.birthDate)
         viewModel.signupDidTapped
             .withLatestFrom(viewModel.agrementAgreeSwitch)
+            .filter { $0 }
+            .flatMap { [weak self] _ -> Observable<Bool> in
+                return self?.viewModel.entriesValidation.isAllEntryValid ?? Observable.empty()
+            }
             .filter { $0 }
             .withLatestFrom(textsObs)
             .subscribe(onNext: { [weak self] email, password, fName, lName, bdate in
@@ -95,5 +101,111 @@ extension SignupPresenter {
     
     private func navigateToHome() {
         router.go(to: .home)
+    }
+}
+
+extension SignupPresenter {
+    
+    private func bindEntriesWithValidation() {
+        bindEmailWithValidation()
+        bindPasswordWithValidation()
+        bindFirstNameWithValidation()
+        bindLastNameWithValidation()
+    }
+    
+    private func bindEmailWithValidation() {
+        viewModel.email.subscribe(onNext: { [weak self] email in
+            var entry: SignupEntryState = .empty
+            if email.isEmail {
+                entry = .valid(entry: email)
+            } else {
+                entry = email.isEmpty ? .empty : .notValid
+            }
+            self?.viewModel.entriesValidation.email = entry
+        }).disposed(by: disposeBag)
+    }
+    
+    private func bindPasswordWithValidation() {
+        viewModel.password.subscribe(onNext: { [weak self] password in
+            var entry: SignupEntryState = .empty
+            if password.isValidPassword {
+                entry = .valid(entry: password)
+            } else {
+                entry = password.isEmpty ? .empty : .notValid
+            }
+            self?.viewModel.entriesValidation.password = entry
+        }).disposed(by: disposeBag)
+    }
+    
+    private func bindFirstNameWithValidation() {
+        viewModel.firstName.subscribe(onNext: { [weak self] fName in
+            var entry: SignupEntryState = .empty
+            if fName.isValidName {
+                entry = .valid(entry: fName)
+            } else {
+                entry = fName.isEmpty ? .empty : .notValid
+            }
+            self?.viewModel.entriesValidation.firstName = entry
+        }).disposed(by: disposeBag)
+    }
+    
+    private func bindLastNameWithValidation() {
+        viewModel.firstName.subscribe(onNext: { [weak self] lName in
+            var entry: SignupEntryState = .empty
+            if lName.isValidName {
+                entry = .valid(entry: lName)
+            } else {
+                entry = lName.isEmpty ? .empty : .notValid
+            }
+            self?.viewModel.entriesValidation.lastName = entry
+        }).disposed(by: disposeBag)
+    }
+}
+
+extension SignupPresenter {
+    private func observeOnWrongEntries() {
+        viewModel.signupDidTapped
+            .flatMap { [weak self] _ -> Observable<Bool> in
+                return self?.viewModel.entriesValidation.isAllEntryValid ?? Observable.empty()
+            }
+            .filter { !$0 }
+            .subscribe(onNext: { [weak self] _ in
+                self?.handleWrongEntries()
+            }).disposed(by: disposeBag)
+    }
+    
+    private func handleWrongEntries() {
+        let entries = viewModel.entriesValidation
+        if entries.email.isEmpty {
+            viewController?.displayAlertWith(title: "empty email", message: "empty email")
+            return
+        } else if entries.email.isNotValid {
+            viewController?.displayAlertWith(title: "wrong email", message: "wrong email")
+            return
+        }
+        
+        if entries.password.isEmpty {
+            viewController?.displayAlertWith(title: "empty password", message: "empty password")
+            return
+        } else if entries.password.isNotValid {
+            viewController?.displayAlertWith(title: "wrong password", message: "wrong password")
+            return
+        }
+        
+        if entries.firstName.isEmpty {
+            viewController?.displayAlertWith(title: "empty firstName", message: "empty firstName")
+            return
+        } else if entries.firstName.isNotValid {
+             viewController?.displayAlertWith(title: "wrong firstName", message: "wrong firstName")
+            return
+        }
+        
+        if entries.lastName.isEmpty {
+            viewController?.displayAlertWith(title: "empty lastName", message: "empty lastName")
+            return
+        } else if entries.lastName.isNotValid {
+            viewController?.displayAlertWith(title: "wrong lastName", message: "wrong lastName")
+            return
+        }
     }
 }
