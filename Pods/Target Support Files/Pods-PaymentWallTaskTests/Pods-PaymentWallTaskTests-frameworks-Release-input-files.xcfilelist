@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework

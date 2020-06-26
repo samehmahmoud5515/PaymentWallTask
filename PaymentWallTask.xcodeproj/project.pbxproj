@@ -91,7 +91,7 @@
 		5075F29A24A3F8B800A9BE60 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F29224A3F8B800A9BE60 /* SplashRouter.swift */; };
 		5087575E24A468DE00222C22 /* TransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087575D24A468DE00222C22 /* TransactionProtocol.swift */; };
 		5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982279249D15450020A5A5 /* AppDelegate.swift */; };
-		50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */; };
+		50982291249D154F0020A5A5 /* WalletTransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* WalletTransactionTests.swift */; };
 		5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */; };
 		509822B2249D182C0020A5A5 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822B1249D182C0020A5A5 /* RootRouter.swift */; };
 		509822B5249D18830020A5A5 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822B4249D18830020A5A5 /* RootContract.swift */; };
@@ -220,7 +220,7 @@
 		50982282249D154F0020A5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50982287249D154F0020A5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5098228C249D154F0020A5A5 /* PaymentWallTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentWallTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentWallTaskTests.swift; sourceTree = "<group>"; };
+		50982290249D154F0020A5A5 /* WalletTransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionTests.swift; sourceTree = "<group>"; };
 		50982292249D154F0020A5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50982297249D154F0020A5A5 /* PaymentWallTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentWallTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentWallTaskUITests.swift; sourceTree = "<group>"; };
@@ -1048,7 +1048,7 @@
 		5098228F249D154F0020A5A5 /* PaymentWallTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				50982290249D154F0020A5A5 /* PaymentWallTaskTests.swift */,
+				50982290249D154F0020A5A5 /* WalletTransactionTests.swift */,
 				50982292249D154F0020A5A5 /* Info.plist */,
 			);
 			path = PaymentWallTaskTests;
@@ -1573,7 +1573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50982291249D154F0020A5A5 /* PaymentWallTaskTests.swift in Sources */,
+				50982291249D154F0020A5A5 /* WalletTransactionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
