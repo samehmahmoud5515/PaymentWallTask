@@ -14,6 +14,8 @@ RxRealm So when a when a record in database changed The application get the upda
 
 I used branches and pull requests in every feature.
 
+I made Unit tests for one module as an example.
+
 -------------------------------------------------------------------------------------------------------------------
 
 QR Codes:
