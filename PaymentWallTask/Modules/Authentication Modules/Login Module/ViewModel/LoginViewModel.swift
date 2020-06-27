@@ -16,6 +16,8 @@ struct LoginViewModel {
     let emailText = PublishSubject<String>()
     let passwordText = PublishSubject<String>()
     
+    var entriesValidation = LoginEntriesValidation()
+    
     //taps
     let loginDidTapped = PublishSubject<Void>()
     let signupDidTapped = PublishSubject<Void>()

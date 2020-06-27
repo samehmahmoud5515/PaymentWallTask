@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502AFD6724A80F4400EB23E3 /* SignupValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */; };
 		505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693424A12FB10010BE4A /* LoginViewModel.swift */; };
 		505A694324A12FB10010BE4A /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693624A12FB10010BE4A /* LoginContract.swift */; };
 		505A694424A12FB10010BE4A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693824A12FB10010BE4A /* LoginPresenter.swift */; };
@@ -72,6 +73,10 @@
 		505D30FC24A2DD6B003D3B21 /* StandardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30FB24A2DD6B003D3B21 /* StandardError.swift */; };
 		505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310124A2E378003D3B21 /* KeyChainService.swift */; };
 		505D310524A2E5DF003D3B21 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310424A2E5DF003D3B21 /* Data+Extension.swift */; };
+		506CDBA324A8033B00E68B97 /* SignupEntryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CDBA224A8033B00E68B97 /* SignupEntryState.swift */; };
+		506CDBA524A8036000E68B97 /* SignupEntriesValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CDBA424A8036000E68B97 /* SignupEntriesValidation.swift */; };
+		506CDBA824A8070600E68B97 /* LoginEntriesValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CDBA724A8070600E68B97 /* LoginEntriesValidation.swift */; };
+		506CDBAA24A8072E00E68B97 /* LoginEntryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CDBA924A8072E00E68B97 /* LoginEntryState.swift */; };
 		506D8E2024A4A66200ABD63D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E1F24A4A66200ABD63D /* Date.swift */; };
 		506D8E3324A4B9A700ABD63D /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2524A4B9A700ABD63D /* SignupViewModel.swift */; };
 		506D8E3424A4B9A700ABD63D /* SignupContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2724A4B9A700ABD63D /* SignupContract.swift */; };
@@ -132,6 +137,7 @@
 		023E13161C7E88ED8CE1A264 /* Pods_PaymentWallTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F983F305D95765C14070ABC /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTask_PaymentWallTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidationTests.swift; sourceTree = "<group>"; };
 		505A693424A12FB10010BE4A /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		505A693624A12FB10010BE4A /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		505A693824A12FB10010BE4A /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -197,6 +203,10 @@
 		505D30FB24A2DD6B003D3B21 /* StandardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardError.swift; sourceTree = "<group>"; };
 		505D310124A2E378003D3B21 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		505D310424A2E5DF003D3B21 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		506CDBA224A8033B00E68B97 /* SignupEntryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEntryState.swift; sourceTree = "<group>"; };
+		506CDBA424A8036000E68B97 /* SignupEntriesValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEntriesValidation.swift; sourceTree = "<group>"; };
+		506CDBA724A8070600E68B97 /* LoginEntriesValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntriesValidation.swift; sourceTree = "<group>"; };
+		506CDBA924A8072E00E68B97 /* LoginEntryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntryState.swift; sourceTree = "<group>"; };
 		506D8E1F24A4A66200ABD63D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		506D8E2524A4B9A700ABD63D /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		506D8E2724A4B9A700ABD63D /* SignupContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupContract.swift; sourceTree = "<group>"; };
@@ -304,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				505A693424A12FB10010BE4A /* LoginViewModel.swift */,
+				506CDBA724A8070600E68B97 /* LoginEntriesValidation.swift */,
+				506CDBA924A8072E00E68B97 /* LoginEntryState.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -426,7 +438,7 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		505A695E24A164930010BE4A /* HomeModule */ = {
+		505A695E24A164930010BE4A /* Home Module */ = {
 			isa = PBXGroup;
 			children = (
 				505A695F24A164930010BE4A /* ViewModel */,
@@ -437,7 +449,7 @@
 				505A696A24A164930010BE4A /* Localization */,
 				505A696C24A164930010BE4A /* Router */,
 			);
-			path = HomeModule;
+			path = "Home Module";
 			sourceTree = "<group>";
 		};
 		505A695F24A164930010BE4A /* ViewModel */ = {
@@ -738,7 +750,7 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
-		505D30CE24A256D1003D3B21 /* PaymentModule */ = {
+		505D30CE24A256D1003D3B21 /* Payment Module */ = {
 			isa = PBXGroup;
 			children = (
 				505D30CF24A256D1003D3B21 /* ViewModel */,
@@ -749,7 +761,7 @@
 				505D30DA24A256D1003D3B21 /* Localization */,
 				505D30DC24A256D1003D3B21 /* Router */,
 			);
-			path = PaymentModule;
+			path = "Payment Module";
 			sourceTree = "<group>";
 		};
 		505D30CF24A256D1003D3B21 /* ViewModel */ = {
@@ -872,6 +884,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		506CDBA624A803CE00E68B97 /* Authentication Modules */ = {
+			isa = PBXGroup;
+			children = (
+				505A693224A12FB10010BE4A /* Login Module */,
+				506D8E2324A4B9A700ABD63D /* SignupModule */,
+			);
+			path = "Authentication Modules";
+			sourceTree = "<group>";
+		};
 		506D8E1E24A4A65400ABD63D /* Date */ = {
 			isa = PBXGroup;
 			children = (
@@ -898,6 +919,8 @@
 			isa = PBXGroup;
 			children = (
 				506D8E2524A4B9A700ABD63D /* SignupViewModel.swift */,
+				506CDBA224A8033B00E68B97 /* SignupEntryState.swift */,
+				506CDBA424A8036000E68B97 /* SignupEntriesValidation.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1050,6 +1073,7 @@
 			children = (
 				50982290249D154F0020A5A5 /* WalletTransactionTests.swift */,
 				50982292249D154F0020A5A5 /* Info.plist */,
+				502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */,
 			);
 			path = PaymentWallTaskTests;
 			sourceTree = "<group>";
@@ -1100,13 +1124,12 @@
 		509822AD249D17E70020A5A5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				505A695E24A164930010BE4A /* HomeModule */,
-				505A693224A12FB10010BE4A /* Login Module */,
-				505D30CE24A256D1003D3B21 /* PaymentModule */,
+				506CDBA624A803CE00E68B97 /* Authentication Modules */,
+				505A695E24A164930010BE4A /* Home Module */,
+				505D30CE24A256D1003D3B21 /* Payment Module */,
 				505A69AC24A169A50010BE4A /* ProfileModule */,
 				505A699224A169170010BE4A /* QRCodeScannerModule */,
 				509822AE249D17F30020A5A5 /* Root Module */,
-				506D8E2324A4B9A700ABD63D /* SignupModule */,
 				5075F28324A3F8B700A9BE60 /* SplashModule */,
 				505A697824A167D20010BE4A /* WalletTransactionsModule */,
 			);
@@ -1503,6 +1526,7 @@
 				505D30F224A2CBE2003D3B21 /* Transaction.swift in Sources */,
 				5087575E24A468DE00222C22 /* TransactionProtocol.swift in Sources */,
 				5075F29824A3F8B800A9BE60 /* SplashInteractor.swift in Sources */,
+				506CDBA324A8033B00E68B97 /* SignupEntryState.swift in Sources */,
 				505A698D24A167D20010BE4A /* WalletTransactionsInteractor.swift in Sources */,
 				505D30F424A2CBFA003D3B21 /* Currency.swift in Sources */,
 				5075F29324A3F8B800A9BE60 /* SplashViewModel.swift in Sources */,
@@ -1520,10 +1544,12 @@
 				506D8E3524A4B9A700ABD63D /* SignupPresenter.swift in Sources */,
 				505A69A924A169170010BE4A /* QRCodeScannerRouter.swift in Sources */,
 				506D8E3624A4B9A700ABD63D /* SignupViewController.swift in Sources */,
+				506CDBA824A8070600E68B97 /* LoginEntriesValidation.swift in Sources */,
 				5075F29424A3F8B800A9BE60 /* SplashContract.swift in Sources */,
 				505A69BC24A169A50010BE4A /* ProfileViewModel.swift in Sources */,
 				505A697524A164930010BE4A /* HomeRouter.swift in Sources */,
 				505A695B24A155410010BE4A /* UserEntity.swift in Sources */,
+				506CDBAA24A8072E00E68B97 /* LoginEntryState.swift in Sources */,
 				505A698E24A167D20010BE4A /* WalletTransactionsLocalizatedStrings.swift in Sources */,
 				5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */,
 				5075F29A24A3F8B800A9BE60 /* SplashRouter.swift in Sources */,
@@ -1534,6 +1560,7 @@
 				505A694C24A13BA30010BE4A /* UIView+IBInspectable.swift in Sources */,
 				505D30EF24A2C6F5003D3B21 /* TransactionEntity.swift in Sources */,
 				505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */,
+				506CDBA524A8036000E68B97 /* SignupEntriesValidation.swift in Sources */,
 				505D30E324A256D1003D3B21 /* PaymentInteractor.swift in Sources */,
 				505A69BD24A169A50010BE4A /* ProfileContract.swift in Sources */,
 				505D30FC24A2DD6B003D3B21 /* StandardError.swift in Sources */,
@@ -1573,6 +1600,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502AFD6724A80F4400EB23E3 /* SignupValidationTests.swift in Sources */,
 				50982291249D154F0020A5A5 /* WalletTransactionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
