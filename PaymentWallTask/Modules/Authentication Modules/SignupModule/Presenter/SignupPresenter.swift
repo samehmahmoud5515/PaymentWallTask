@@ -16,7 +16,7 @@ class SignupPresenter: SignupPresenterProtocol {
     var interactor: SignupInteractorProtocol?
     private let router: SignupRouterProtocol
     private let disposeBag = DisposeBag()
-    var viewModel =  SignupViewModel()
+    let viewModel = SignupViewModel()
 
     
     
@@ -111,13 +111,14 @@ extension SignupPresenter {
         bindPasswordWithValidation()
         bindFirstNameWithValidation()
         bindLastNameWithValidation()
+        bindBirthDateWithValidation()
     }
     
     private func bindEmailWithValidation() {
         viewModel.email.subscribe(onNext: { [weak self] email in
             var entry: SignupEntryState = .empty
             if email.isEmail {
-                entry = .valid(entry: email)
+                entry = .valid
             } else {
                 entry = email.isEmpty ? .empty : .notValid
             }
@@ -129,7 +130,7 @@ extension SignupPresenter {
         viewModel.password.subscribe(onNext: { [weak self] password in
             var entry: SignupEntryState = .empty
             if password.isValidPassword {
-                entry = .valid(entry: password)
+                entry = .valid
             } else {
                 entry = password.isEmpty ? .empty : .notValid
             }
@@ -141,7 +142,7 @@ extension SignupPresenter {
         viewModel.firstName.subscribe(onNext: { [weak self] fName in
             var entry: SignupEntryState = .empty
             if fName.isValidName {
-                entry = .valid(entry: fName)
+                entry = .valid
             } else {
                 entry = fName.isEmpty ? .empty : .notValid
             }
@@ -150,18 +151,31 @@ extension SignupPresenter {
     }
     
     private func bindLastNameWithValidation() {
-        viewModel.firstName.subscribe(onNext: { [weak self] lName in
+        viewModel.lastName.subscribe(onNext: { [weak self] lName in
             var entry: SignupEntryState = .empty
             if lName.isValidName {
-                entry = .valid(entry: lName)
+                entry = .valid
             } else {
                 entry = lName.isEmpty ? .empty : .notValid
             }
             self?.viewModel.entriesValidation.lastName = entry
         }).disposed(by: disposeBag)
     }
+    
+    private func bindBirthDateWithValidation() {
+        viewModel.birthDate.subscribe(onNext: { [weak self] bDate in
+            var entry: SignupEntryState = .empty
+            if bDate.toDate() != nil {
+                entry = .valid
+            } else {
+                entry = bDate.isEmpty ? .empty : .notValid
+            }
+            self?.viewModel.entriesValidation.birthDate = entry
+        }).disposed(by: disposeBag)
+    }
 }
 
+//MARK: - Handle Not valid entries
 extension SignupPresenter {
     private func observeOnWrongEntries() {
         viewModel.signupDidTapped
@@ -176,36 +190,74 @@ extension SignupPresenter {
     
     private func handleWrongEntries() {
         let entries = viewModel.entriesValidation
-        if entries.email.isEmpty {
-            viewController?.displayAlertWith(title: "empty email", message: "empty email")
-            return
-        } else if entries.email.isNotValid {
-            viewController?.displayAlertWith(title: "wrong email", message: "wrong email")
+        if !entries.email.isValid {
+            handleWrongEmail()
             return
         }
         
-        if entries.password.isEmpty {
-            viewController?.displayAlertWith(title: "empty password", message: "empty password")
-            return
-        } else if entries.password.isNotValid {
-            viewController?.displayAlertWith(title: "wrong password", message: "wrong password")
+        if !entries.password.isValid {
+            handleWrongPassword()
             return
         }
         
-        if entries.firstName.isEmpty {
-            viewController?.displayAlertWith(title: "empty firstName", message: "empty firstName")
-            return
-        } else if entries.firstName.isNotValid {
-             viewController?.displayAlertWith(title: "wrong firstName", message: "wrong firstName")
+        if !entries.firstName.isValid {
+            handleWrongFirstName()
             return
         }
         
-        if entries.lastName.isEmpty {
-            viewController?.displayAlertWith(title: "empty lastName", message: "empty lastName")
+        if !entries.lastName.isValid {
+            handleWrongLastName()
             return
-        } else if entries.lastName.isNotValid {
-            viewController?.displayAlertWith(title: "wrong lastName", message: "wrong lastName")
-            return
+        }
+        
+        if !entries.birthDate.isValid {
+            handleWrongBirthDate()
+        }
+    
+    }
+    
+    private func handleWrongEmail() {
+        let localization = viewModel.localization
+        if viewModel.entriesValidation.email.isEmpty {
+            viewController?.displayAlertWith(title: localization.emptyEmail, message: nil)
+        } else if viewModel.entriesValidation.email.isNotValid {
+            viewController?.displayAlertWith(title: localization.wrongEmailTitle, message: localization.wrongEmailMessage)
+        }
+    }
+    
+    private func handleWrongPassword() {
+        let localization = viewModel.localization
+        if viewModel.entriesValidation.password.isEmpty {
+            viewController?.displayAlertWith(title: localization.emptyPassword, message: nil)
+        } else if viewModel.entriesValidation.password.isNotValid {
+            viewController?.displayAlertWith(title: localization.wrongPasswordTitle, message: localization.wrongPasswordMessage)
+        }
+    }
+    
+    private func handleWrongFirstName() {
+        let localization = viewModel.localization
+        if viewModel.entriesValidation.firstName.isEmpty {
+            viewController?.displayAlertWith(title: localization.emptyFirstName, message: nil)
+        } else if viewModel.entriesValidation.firstName.isNotValid {
+            viewController?.displayAlertWith(title: localization.wrongFirstNameTitle, message: localization.wrongFirstNameMessage)
+        }
+    }
+    
+    private func handleWrongLastName() {
+        let localization = viewModel.localization
+        if viewModel.entriesValidation.lastName.isEmpty {
+            viewController?.displayAlertWith(title: localization.emptyLastName, message: nil)
+        } else if viewModel.entriesValidation.lastName.isNotValid {
+            viewController?.displayAlertWith(title: localization.wrongLastNameTitle, message: localization.wrongLastNameMessage)
+        }
+    }
+    
+    private func handleWrongBirthDate() {
+        let localization = viewModel.localization
+        if viewModel.entriesValidation.birthDate.isEmpty {
+            viewController?.displayAlertWith(title: localization.emptyBirthDate, message: nil)
+        } else if viewModel.entriesValidation.birthDate.isNotValid {
+            viewController?.displayAlertWith(title: localization.wrongBirthDateTitle, message: localization.wrongBirthDateMessage)
         }
     }
 }
