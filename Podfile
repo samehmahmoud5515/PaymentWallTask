@@ -19,6 +19,8 @@ target 'PaymentWallTask' do
   target 'PaymentWallTaskTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxTest'
+    pod 'RxBlocking'
   end
 
   target 'PaymentWallTaskUITests' do

@@ -81,6 +81,7 @@
 		506D8E3824A4B9A700ABD63D /* SignupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E2E24A4B9A700ABD63D /* SignupInteractor.swift */; };
 		506D8E3924A4B9A700ABD63D /* SignupLocalizatedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E3024A4B9A700ABD63D /* SignupLocalizatedStrings.swift */; };
 		506D8E3A24A4B9A700ABD63D /* SignupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D8E3224A4B9A700ABD63D /* SignupRouter.swift */; };
+		5075A21C24A66B44005261FD /* SignupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075A21B24A66B44005261FD /* SignupTests.swift */; };
 		5075F28024A3E53800A9BE60 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */; };
 		5075F29324A3F8B800A9BE60 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F28524A3F8B700A9BE60 /* SplashViewModel.swift */; };
 		5075F29424A3F8B800A9BE60 /* SplashContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F28724A3F8B700A9BE60 /* SplashContract.swift */; };
@@ -206,6 +207,7 @@
 		506D8E2E24A4B9A700ABD63D /* SignupInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupInteractor.swift; sourceTree = "<group>"; };
 		506D8E3024A4B9A700ABD63D /* SignupLocalizatedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupLocalizatedStrings.swift; sourceTree = "<group>"; };
 		506D8E3224A4B9A700ABD63D /* SignupRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupRouter.swift; sourceTree = "<group>"; };
+		5075A21B24A66B44005261FD /* SignupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTests.swift; sourceTree = "<group>"; };
 		5075F27F24A3E53800A9BE60 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		5075F28524A3F8B700A9BE60 /* SplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		5075F28724A3F8B700A9BE60 /* SplashContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashContract.swift; sourceTree = "<group>"; };
@@ -1050,6 +1052,7 @@
 			children = (
 				50982290249D154F0020A5A5 /* WalletTransactionTests.swift */,
 				50982292249D154F0020A5A5 /* Info.plist */,
+				5075A21B24A66B44005261FD /* SignupTests.swift */,
 			);
 			path = PaymentWallTaskTests;
 			sourceTree = "<group>";
@@ -1263,6 +1266,7 @@
 				50982288249D154F0020A5A5 /* Sources */,
 				50982289249D154F0020A5A5 /* Frameworks */,
 				5098228A249D154F0020A5A5 /* Resources */,
+				C9554F5EED46CF6DD120CD76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1475,6 +1479,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C9554F5EED46CF6DD120CD76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1574,6 +1595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50982291249D154F0020A5A5 /* WalletTransactionTests.swift in Sources */,
+				5075A21C24A66B44005261FD /* SignupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
