@@ -17,3 +17,21 @@ extension String {
         return dateFormatter.date(from: self)
     }
 }
+
+extension String {
+    func validateWith(pattern: String) -> Bool {
+        return NSPredicate(format: "SELF MATCHES %@", pattern).evaluate(with: self)
+    }
+    
+    var isValidPassword: Bool {
+        return validateWith(pattern: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$")
+    }
+
+    var isEmail: Bool {
+        return validateWith(pattern:"^(.+)@(.+)$")
+    }
+
+    var isValidName: Bool {
+        return validateWith(pattern: "^.{1,20}$")
+    }
+}

@@ -7,144 +7,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5807DF4E-36B3-455E-A7E2-8F8896F592B0"
+            uuid = "B20DFE1F-3CB8-4CA0-82F5-914FCD4E7CC2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
-            landmarkName = "handleWrongEntries()"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
+            landmarkName = "handleWrongBirthDate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "493FC084-562A-4475-B541-5AFE00BA875D"
+            uuid = "BF71674E-E984-4BAD-945A-04BE8B349CCD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
-            landmarkName = "handleWrongEntries()"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "handleWrongBirthDate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6DDE6A2C-93D2-41F0-9CDA-3C2D4E962054"
+            uuid = "A811E946-2B14-478A-B814-F910031B2C87"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
+            filePath = "PaymentWallTask/Modules/WalletTransactionsModule/Presenter/WalletTransactionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "handleWrongEntries()"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "handleReloadFetchingTransactions()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "93A6868B-1074-4070-A5F1-F92B4C840662"
+            uuid = "BF4D98B3-81A7-4BC1-B7FF-72CB61A43FFA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
+            filePath = "PaymentWallTask/Modules/WalletTransactionsModule/Presenter/WalletTransactionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "handleWrongEntries()"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "handleReloadFetchingTransactions()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BE09093D-4F13-4852-A787-69C0A518F66E"
+            uuid = "F71A8560-82EB-40AC-AEA3-68C12101C459"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
+            filePath = "PaymentWallTask/Modules/WalletTransactionsModule/Presenter/WalletTransactionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
-            landmarkName = "handleWrongEntries()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A5E61488-41FA-4B96-83B1-255FEC0ACDC4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
-            landmarkName = "handleWrongEntries()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "25492713-350A-4D40-94D3-E6D12679A667"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "handleWrongEntries()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D86B6040-2779-4D23-833C-6052CE98D2BF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "207"
-            endingLineNumber = "207"
-            landmarkName = "handleWrongEntries()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EB92AC41-3DD4-4614-863C-A465793BDFA2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PaymentWallTask/Modules/SignupModule/Presenter/SignupPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
-            landmarkName = "observeOnWrongEntries()"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "handleReloadFetchingTransactions()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

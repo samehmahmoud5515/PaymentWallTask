@@ -71,7 +71,7 @@ extension SignupViewController {
     private func bindScrollViewContentOffSetWithKeybaordVisiable() {
         RxKeyboard.instance.willShowVisibleHeight
             .drive(onNext: { [scrollView] keyboardVisibleHeight in
-                scrollView?.contentOffset.y += keyboardVisibleHeight / 2
+                scrollView?.contentOffset.y += keyboardVisibleHeight / 3
                 scrollView?.contentInset.bottom = keyboardVisibleHeight
             })
             .disposed(by: disposeBag)

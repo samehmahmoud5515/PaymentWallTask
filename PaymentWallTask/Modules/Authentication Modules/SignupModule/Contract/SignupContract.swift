@@ -25,7 +25,7 @@ protocol SignupRouterProtocol: class {
 //MARK: - Presenter
 protocol SignupPresenterProtocol: class {
     func attach()
-    var viewModel: SignupViewModel  { get }
+    var viewModel: SignupViewModel { get }
 
 }
 

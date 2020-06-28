@@ -1,5 +1,5 @@
 //
-//  WalletTransactionTests.swift
+//  WalletTransactionInteractorTests.swift
 //  PaymentWallTaskTests
 //
 //  Created by SAMEH on 6/19/20.
@@ -10,7 +10,7 @@ import RxSwift
 import XCTest
 @testable import PaymentWallTask
 
-class WalletTransactionTests: XCTestCase {
+class WalletTransactionInteractorTests: XCTestCase {
     
     var interactor: WalletTransactionsInteractor!
     var tranasactions: [Transaction]!
