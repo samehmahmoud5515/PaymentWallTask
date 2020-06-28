@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		502AFD6724A80F4400EB23E3 /* SignupValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */; };
+		505A4C5C24A91CBA00A63984 /* WalletTransactionModuleLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A4C5B24A91CBA00A63984 /* WalletTransactionModuleLayers.swift */; };
+		505A4C5E24A922EE00A63984 /* WalletTransactionModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A4C5D24A922EE00A63984 /* WalletTransactionModuleTests.swift */; };
+		505A4C6024A93A4700A63984 /* QRCodeWrongStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 505A4C5F24A93A4700A63984 /* QRCodeWrongStub.json */; };
 		505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693424A12FB10010BE4A /* LoginViewModel.swift */; };
 		505A694324A12FB10010BE4A /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693624A12FB10010BE4A /* LoginContract.swift */; };
 		505A694424A12FB10010BE4A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693824A12FB10010BE4A /* LoginPresenter.swift */; };
@@ -73,6 +76,9 @@
 		505D30FC24A2DD6B003D3B21 /* StandardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D30FB24A2DD6B003D3B21 /* StandardError.swift */; };
 		505D310224A2E378003D3B21 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310124A2E378003D3B21 /* KeyChainService.swift */; };
 		505D310524A2E5DF003D3B21 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505D310424A2E5DF003D3B21 /* Data+Extension.swift */; };
+		50686C1824A8AF2F0069F3D4 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686C1724A8AF2F0069F3D4 /* LoginTests.swift */; };
+		50686CCB24A8FACB0069F3D4 /* QRCodeScannerInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50686CCA24A8FACB0069F3D4 /* QRCodeScannerInteractorTest.swift */; };
+		50686CCE24A8FBB50069F3D4 /* QRCodeStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 50686CCD24A8FBB50069F3D4 /* QRCodeStub.json */; };
 		506CDBA324A8033B00E68B97 /* SignupEntryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CDBA224A8033B00E68B97 /* SignupEntryState.swift */; };
 		506CDBA524A8036000E68B97 /* SignupEntriesValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CDBA424A8036000E68B97 /* SignupEntriesValidation.swift */; };
 		506CDBA824A8070600E68B97 /* LoginEntriesValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CDBA724A8070600E68B97 /* LoginEntriesValidation.swift */; };
@@ -96,7 +102,7 @@
 		5075F29A24A3F8B800A9BE60 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075F29224A3F8B800A9BE60 /* SplashRouter.swift */; };
 		5087575E24A468DE00222C22 /* TransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087575D24A468DE00222C22 /* TransactionProtocol.swift */; };
 		5098227A249D15450020A5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982279249D15450020A5A5 /* AppDelegate.swift */; };
-		50982291249D154F0020A5A5 /* WalletTransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* WalletTransactionTests.swift */; };
+		50982291249D154F0020A5A5 /* WalletTransactionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50982290249D154F0020A5A5 /* WalletTransactionInteractorTests.swift */; };
 		5098229C249D154F0020A5A5 /* PaymentWallTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */; };
 		509822B2249D182C0020A5A5 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822B1249D182C0020A5A5 /* RootRouter.swift */; };
 		509822B5249D18830020A5A5 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509822B4249D18830020A5A5 /* RootContract.swift */; };
@@ -138,6 +144,9 @@
 		1F983F305D95765C14070ABC /* Pods_PaymentWallTask_PaymentWallTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTask_PaymentWallTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidationTests.swift; sourceTree = "<group>"; };
+		505A4C5B24A91CBA00A63984 /* WalletTransactionModuleLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionModuleLayers.swift; sourceTree = "<group>"; };
+		505A4C5D24A922EE00A63984 /* WalletTransactionModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionModuleTests.swift; sourceTree = "<group>"; };
+		505A4C5F24A93A4700A63984 /* QRCodeWrongStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QRCodeWrongStub.json; sourceTree = "<group>"; };
 		505A693424A12FB10010BE4A /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		505A693624A12FB10010BE4A /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		505A693824A12FB10010BE4A /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -203,6 +212,9 @@
 		505D30FB24A2DD6B003D3B21 /* StandardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardError.swift; sourceTree = "<group>"; };
 		505D310124A2E378003D3B21 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		505D310424A2E5DF003D3B21 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		50686C1724A8AF2F0069F3D4 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		50686CCA24A8FACB0069F3D4 /* QRCodeScannerInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerInteractorTest.swift; sourceTree = "<group>"; };
+		50686CCD24A8FBB50069F3D4 /* QRCodeStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QRCodeStub.json; sourceTree = "<group>"; };
 		506CDBA224A8033B00E68B97 /* SignupEntryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEntryState.swift; sourceTree = "<group>"; };
 		506CDBA424A8036000E68B97 /* SignupEntriesValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEntriesValidation.swift; sourceTree = "<group>"; };
 		506CDBA724A8070600E68B97 /* LoginEntriesValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntriesValidation.swift; sourceTree = "<group>"; };
@@ -230,7 +242,7 @@
 		50982282249D154F0020A5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50982287249D154F0020A5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5098228C249D154F0020A5A5 /* PaymentWallTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentWallTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50982290249D154F0020A5A5 /* WalletTransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionTests.swift; sourceTree = "<group>"; };
+		50982290249D154F0020A5A5 /* WalletTransactionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionInteractorTests.swift; sourceTree = "<group>"; };
 		50982292249D154F0020A5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50982297249D154F0020A5A5 /* PaymentWallTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentWallTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5098229B249D154F0020A5A5 /* PaymentWallTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentWallTaskUITests.swift; sourceTree = "<group>"; };
@@ -294,6 +306,25 @@
 				CAFE40AD8C31159141E46881 /* Pods-PaymentWallTaskTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		505A4C5A24A91C9A00A63984 /* WalletTransaction Tests */ = {
+			isa = PBXGroup;
+			children = (
+				50982290249D154F0020A5A5 /* WalletTransactionInteractorTests.swift */,
+				505A4C5B24A91CBA00A63984 /* WalletTransactionModuleLayers.swift */,
+				505A4C5D24A922EE00A63984 /* WalletTransactionModuleTests.swift */,
+			);
+			path = "WalletTransaction Tests";
+			sourceTree = "<group>";
+		};
+		505A4C6124A93AA000A63984 /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				50686CCD24A8FBB50069F3D4 /* QRCodeStub.json */,
+				505A4C5F24A93A4700A63984 /* QRCodeWrongStub.json */,
+			);
+			path = JsonFiles;
 			sourceTree = "<group>";
 		};
 		505A693224A12FB10010BE4A /* Login Module */ = {
@@ -884,6 +915,15 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		50686CCC24A8FB8F0069F3D4 /* QrCodeScanner Tests */ = {
+			isa = PBXGroup;
+			children = (
+				50686CCA24A8FACB0069F3D4 /* QRCodeScannerInteractorTest.swift */,
+				505A4C6124A93AA000A63984 /* JsonFiles */,
+			);
+			path = "QrCodeScanner Tests";
+			sourceTree = "<group>";
+		};
 		506CDBA624A803CE00E68B97 /* Authentication Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -1071,9 +1111,11 @@
 		5098228F249D154F0020A5A5 /* PaymentWallTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				50982290249D154F0020A5A5 /* WalletTransactionTests.swift */,
+				509E2F0924A93C0300964868 /* Login Tests */,
+				509E2F0824A93BBB00964868 /* Signup Tests */,
+				505A4C5A24A91C9A00A63984 /* WalletTransaction Tests */,
+				50686CCC24A8FB8F0069F3D4 /* QrCodeScanner Tests */,
 				50982292249D154F0020A5A5 /* Info.plist */,
-				502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */,
 			);
 			path = PaymentWallTaskTests;
 			sourceTree = "<group>";
@@ -1204,6 +1246,22 @@
 			path = "UIView+Constraint";
 			sourceTree = "<group>";
 		};
+		509E2F0824A93BBB00964868 /* Signup Tests */ = {
+			isa = PBXGroup;
+			children = (
+				502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */,
+			);
+			path = "Signup Tests";
+			sourceTree = "<group>";
+		};
+		509E2F0924A93C0300964868 /* Login Tests */ = {
+			isa = PBXGroup;
+			children = (
+				50686C1724A8AF2F0069F3D4 /* LoginTests.swift */,
+			);
+			path = "Login Tests";
+			sourceTree = "<group>";
+		};
 		50B19A7624A54728002107F3 /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -1286,6 +1344,7 @@
 				50982288249D154F0020A5A5 /* Sources */,
 				50982289249D154F0020A5A5 /* Frameworks */,
 				5098228A249D154F0020A5A5 /* Resources */,
+				DDE2442E9C356F7D481EF026 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1385,6 +1444,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505A4C6024A93A4700A63984 /* QRCodeWrongStub.json in Resources */,
+				50686CCE24A8FBB50069F3D4 /* QRCodeStub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1498,6 +1559,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DDE2442E9C356F7D481EF026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentWallTaskTests/Pods-PaymentWallTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1600,8 +1678,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505A4C5E24A922EE00A63984 /* WalletTransactionModuleTests.swift in Sources */,
 				502AFD6724A80F4400EB23E3 /* SignupValidationTests.swift in Sources */,
-				50982291249D154F0020A5A5 /* WalletTransactionTests.swift in Sources */,
+				50982291249D154F0020A5A5 /* WalletTransactionInteractorTests.swift in Sources */,
+				50686C1824A8AF2F0069F3D4 /* LoginTests.swift in Sources */,
+				50686CCB24A8FACB0069F3D4 /* QRCodeScannerInteractorTest.swift in Sources */,
+				505A4C5C24A91CBA00A63984 /* WalletTransactionModuleLayers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,8 @@ PODS:
   - Realm/Headers (5.0.3)
   - RealmSwift (5.0.3):
     - Realm (= 5.0.3)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -25,15 +27,19 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - RxTest (5.1.1):
+    - RxSwift (~> 5)
 
 DEPENDENCIES:
   - ObjectMapper
+  - RxBlocking
   - RxCocoa
   - RxDataSources
   - RxGesture
   - RxKeyboard
   - RxRealm
   - RxSwift
+  - RxTest
 
 SPEC REPOS:
   trunk:
@@ -41,6 +47,7 @@ SPEC REPOS:
     - ObjectMapper
     - Realm
     - RealmSwift
+    - RxBlocking
     - RxCocoa
     - RxDataSources
     - RxGesture
@@ -48,12 +55,14 @@ SPEC REPOS:
     - RxRealm
     - RxRelay
     - RxSwift
+    - RxTest
 
 SPEC CHECKSUMS:
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
   RealmSwift: 493c9f089cd3893b3959007973c0e4f640906ba0
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
@@ -61,7 +70,8 @@ SPEC CHECKSUMS:
   RxRealm: af7a3c857efd5a711c176f6df0d67418ad48293b
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
 
-PODFILE CHECKSUM: a1e31ef4e11e08191ef5c3b63206ce01f050ce2f
+PODFILE CHECKSUM: 62f3d231715d4c139b0f592626e4c3b438eccd6e
 
 COCOAPODS: 1.9.1

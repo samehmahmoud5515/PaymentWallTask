@@ -135,6 +135,7 @@ extension WalletTransactionsViewController: WalletTransactionsViewControllerProt
         titleLabel.textAlignment = .center
         titleLabel.text = presenter?.viewModel.localization.emptyTransactions
         titleLabel.center = tableView.center
+        titleLabel.accessibilityIdentifier = "empty_transactions_label_id"
         tableView.backgroundView = titleLabel
     }
     
