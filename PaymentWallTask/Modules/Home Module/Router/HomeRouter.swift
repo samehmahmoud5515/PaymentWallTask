@@ -53,6 +53,7 @@ class HomeRouter: HomeRouterProtocol {
         walletController.tabBarItem = UITabBarItem(title: title,
                                                    image: UIImage(named: images.walletUnselectedImg),
                                                    selectedImage: UIImage(named: images.walletSelectedImg))
+        walletController.tabBarItem.accessibilityIdentifier = "wallet_tab_id"
         return walletNavigation
     }
     

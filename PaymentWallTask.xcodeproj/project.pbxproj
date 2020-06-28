@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		502AFD6724A80F4400EB23E3 /* SignupValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */; };
 		505A4C5C24A91CBA00A63984 /* WalletTransactionModuleLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A4C5B24A91CBA00A63984 /* WalletTransactionModuleLayers.swift */; };
-		505A4C5E24A922EE00A63984 /* WalletTransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A4C5D24A922EE00A63984 /* WalletTransactionTests.swift */; };
+		505A4C5E24A922EE00A63984 /* WalletTransactionModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A4C5D24A922EE00A63984 /* WalletTransactionModuleTests.swift */; };
 		505A4C6024A93A4700A63984 /* QRCodeWrongStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 505A4C5F24A93A4700A63984 /* QRCodeWrongStub.json */; };
 		505A694224A12FB10010BE4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693424A12FB10010BE4A /* LoginViewModel.swift */; };
 		505A694324A12FB10010BE4A /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505A693624A12FB10010BE4A /* LoginContract.swift */; };
@@ -145,7 +145,7 @@
 		4520F7FD206FFFF7C7EE9F53 /* Pods_PaymentWallTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentWallTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		502AFD6624A80F4400EB23E3 /* SignupValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidationTests.swift; sourceTree = "<group>"; };
 		505A4C5B24A91CBA00A63984 /* WalletTransactionModuleLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionModuleLayers.swift; sourceTree = "<group>"; };
-		505A4C5D24A922EE00A63984 /* WalletTransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionTests.swift; sourceTree = "<group>"; };
+		505A4C5D24A922EE00A63984 /* WalletTransactionModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionModuleTests.swift; sourceTree = "<group>"; };
 		505A4C5F24A93A4700A63984 /* QRCodeWrongStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QRCodeWrongStub.json; sourceTree = "<group>"; };
 		505A693424A12FB10010BE4A /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		505A693624A12FB10010BE4A /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 			children = (
 				50982290249D154F0020A5A5 /* WalletTransactionInteractorTests.swift */,
 				505A4C5B24A91CBA00A63984 /* WalletTransactionModuleLayers.swift */,
-				505A4C5D24A922EE00A63984 /* WalletTransactionTests.swift */,
+				505A4C5D24A922EE00A63984 /* WalletTransactionModuleTests.swift */,
 			);
 			path = "WalletTransaction Tests";
 			sourceTree = "<group>";
@@ -1678,7 +1678,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505A4C5E24A922EE00A63984 /* WalletTransactionTests.swift in Sources */,
+				505A4C5E24A922EE00A63984 /* WalletTransactionModuleTests.swift in Sources */,
 				502AFD6724A80F4400EB23E3 /* SignupValidationTests.swift in Sources */,
 				50982291249D154F0020A5A5 /* WalletTransactionInteractorTests.swift in Sources */,
 				50686C1824A8AF2F0069F3D4 /* LoginTests.swift in Sources */,
