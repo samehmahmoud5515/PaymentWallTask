@@ -7,22 +7,17 @@
 //
 
 import XCTest
-import RxSwift
-
-@testable import PaymentWallTask
 
 class PaymentWallTaskUITests: XCTestCase {
 
     var app: XCUIApplication!
     var waitingUIDuration: Double!
-    var disposeBag: DisposeBag!
     
     
     override func setUp() {
         app = XCUIApplication()
         waitingUIDuration = 2.0
         continueAfterFailure = false
-        disposeBag = DisposeBag()
     }
     
     override func tearDown() {
