@@ -16,6 +16,8 @@ I used branches and pull requests in every feature.
 
 I made Unit tests for sevral modules and interactors with mocks and stubs as an example.
 
+I made signup validation with so clean and smart way.
+
 -------------------------------------------------------------------------------------------------------------------
 
 QR Codes:
